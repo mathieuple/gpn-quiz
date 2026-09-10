@@ -11,6 +11,13 @@ export const confusionGroups = [
   ['limbe', 'petiole', 'stipule', 'foliole', 'pedoncule'],
   ['inventaire', 'suivi', 'echantillonnage', 'transect'],
   ['etat-des-lieux', 'diagnostic-ecologique', 'objectif-ecologique', 'suivi-ecologique'],
+  ['monophyletique', 'polyphyletique'],
+  ['thallophyte', 'cormophyte'],
+  ['thalle', 'cormus'],
+  ['bryophyte', 'tracheophyte'],
+  ['gametophyte', 'sporophyte'],
+  ['gametange', 'sporange'],
+  ['archegone', 'antheridie'],
 ];
 
 // Exclusions conservatrices fondées uniquement sur les définitions du cours.

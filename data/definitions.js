@@ -2116,5 +2116,115 @@ export const definitions = [
     ],
     "difficulte": 2,
     "distracteursProches": ["Service de régulation","Service d’approvisionnement","Service culturel"]
+  },
+  {
+    "id": "thallophyte",
+    "terme": "Thallophyte",
+    "definitionCourte": "Organisme non vascularisé, sans feuille, tige ni racine, possédant un corps indifférencié appelé thalle.",
+    "explication": "Le terme regroupait historiquement différents organismes thalloïdes. Il ne correspond plus à un groupe valide en classification phylogénétique.",
+    "matiere": "Biologie végétale",
+    "theme": "Organisation végétale",
+    "variantesAcceptees": ["thallophyte", "thallophytes"],
+    "difficulte": 2,
+    "distracteursProches": ["Cormophyte", "Bryophyte", "Trachéophyte"]
+  },
+  {
+    "id": "lignee-verte",
+    "terme": "Lignée verte",
+    "definitionCourte": "Groupe caractérisé par la présence de plastes issus d’au moins une endosymbiose chez un ancêtre commun.",
+    "explication": "Le cours emploie également l’appellation Archaeplastida.",
+    "matiere": "Biologie végétale",
+    "theme": "Évolution végétale",
+    "variantesAcceptees": ["lignée verte", "lignee verte", "Archaeplastida"],
+    "difficulte": 2,
+    "distracteursProches": ["Cormophyte", "Thallophyte", "Embryophyte"]
+  },
+  {
+    "id": "gametange",
+    "terme": "Gamétange",
+    "definitionCourte": "Structure produisant des gamètes.",
+    "explication": "Le gamétange femelle est appelé archégone et le gamétange mâle est appelé anthéridie.",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["gamétange", "gametange"],
+    "difficulte": 1,
+    "distracteursProches": ["Sporange", "Archégone", "Anthéridie"]
+  },
+  {
+    "id": "archegone",
+    "terme": "Archégone",
+    "definitionCourte": "Gamétange femelle.",
+    "explication": "Le gamétange femelle est appelé archégone.",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["archégone", "archegone"],
+    "difficulte": 2,
+    "distracteursProches": ["Anthéridie", "Sporange", "Gamétange"]
+  },
+  {
+    "id": "antheridie",
+    "terme": "Anthéridie",
+    "definitionCourte": "Gamétange mâle.",
+    "explication": "Le gamétange mâle est appelé anthéridie.",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["anthéridie", "antheridie"],
+    "difficulte": 2,
+    "distracteursProches": ["Archégone", "Sporange", "Gamétange"]
+  },
+  {
+    "id": "sporange",
+    "terme": "Sporange",
+    "definitionCourte": "Structure produisant des spores.",
+    "explication": "Le sporange est une structure produisant des spores.",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["sporange"],
+    "difficulte": 1,
+    "distracteursProches": ["Gamétange", "Archégone", "Anthéridie"]
+  },
+  {
+    "id": "sporophyte",
+    "terme": "Sporophyte",
+    "definitionCourte": "Phase diploïde multicellulaire du cycle de développement végétal.",
+    "explication": "Le sporophyte est issu de la fécondation et produit des spores par méiose.",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["sporophyte"],
+    "difficulte": 2,
+    "distracteursProches": ["Gamétophyte", "Spore", "Gamétange"]
+  },
+  {
+    "id": "gametophyte",
+    "terme": "Gamétophyte",
+    "definitionCourte": "Phase haploïde du cycle de développement végétal produisant des gamètes.",
+    "explication": "Le gamétophyte produit des gamètes haploïdes.",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["gamétophyte", "gametophyte"],
+    "difficulte": 2,
+    "distracteursProches": ["Sporophyte", "Spore", "Gamétange"]
+  },
+  {
+    "id": "spore",
+    "terme": "Spore",
+    "definitionCourte": "Corpuscule reproducteur unicellulaire pouvant donner naissance sans fécondation à un nouvel individu, le gamétophyte haploïde.",
+    "explication": "",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["spore", "spores"],
+    "difficulte": 2,
+    "distracteursProches": ["Sporange", "Sporophyte", "Gamétophyte"]
+  },
+  {
+    "id": "embryophyte",
+    "terme": "Embryophyte",
+    "definitionCourte": "Groupe de végétaux caractérisé notamment par la présence de gamétanges, d’un sporange, d’un sporophyte multicellulaire, d’un embryon et d’une cuticule.",
+    "explication": "Le cours présente également ce groupe comme les Archégoniates ou les plantes terrestres.",
+    "matiere": "Biologie végétale",
+    "theme": "Cycle de développement",
+    "variantesAcceptees": ["embryophyte", "embryophytes", "Archégoniate", "Archégoniates", "archégoniate", "archégoniates", "archegoniate", "archegoniates", "plante terrestre", "plantes terrestres"],
+    "difficulte": 3,
+    "distracteursProches": ["Cormophyte", "Thallophyte", "Trachéophyte"]
   }
 ];

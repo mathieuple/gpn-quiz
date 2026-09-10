@@ -11,7 +11,7 @@ import {load,save,parseImport} from '../js/storage/storage.js';
 import {QuizSession} from '../js/quiz/quiz-engine.js';
 import {chooseNotion} from '../js/quiz/repetition.js';
 const expected=bank.find(d=>normalize(d.terme)==='stenoxybionte');
-test('150 notions officielles valides ; références manquantes signalées',()=>{const result=validateDefinitions(bank,()=>{});assert.equal(result.definitions.length,150);assert.ok(result.errors.every(e=>e.startsWith('Distracteur absent')));});
+test('banque étendue valide ; références manquantes signalées',()=>{const result=validateDefinitions(bank,()=>{});assert.equal(result.definitions.length,bank.length);assert.ok(bank.length>=150);assert.ok(result.errors.every(e=>e.startsWith('Distracteur absent')));});
 test('normalisation accents, casse, espaces, apostrophes et tirets',()=>{for(const a of ['Sténoxybionte','stenoxybionte','STENOXYBIONTE'])assert.equal(validateAnswer(a,expected,bank),'exact');assert.equal(normalize('  Braun–Blanquet  '),'braun blanquet');assert.equal(normalize('L’EAU'),'l\'eau');});
 test('petites fautes et mauvaises réponses',()=>{for(const a of ['stenoxibionte','stenoxybiont'])assert.equal(validateAnswer(a,expected,bank),'almost');for(const a of ['sténotherme','banane',''])assert.equal(validateAnswer(a,expected,bank),'wrong');});
 test('tous les termes et variantes officiels sont exacts',()=>{for(const d of bank)for(const a of [d.terme,...d.variantesAcceptees])assert.equal(validateAnswer(a,d,bank),'exact',d.id+': '+a);});

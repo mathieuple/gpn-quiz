@@ -22,9 +22,9 @@ import {feedback} from '../js/ui/feedback.js';
 const NOW=Date.UTC(2026,8,9,12),byId=id=>bank.find(d=>d.id===id);
 const memory=initial=>{const map=new Map(Object.entries(initial||{}));return {map,getItem:k=>map.get(k)||null,setItem:(k,v)=>map.set(k,v)};};
 
-test('banque scientifique inchangée hors distracteurs ; audit complet sans référence invalide',async()=>{
+test('banque scientifique d’origine inchangée hors distracteurs ; audit complet sans référence invalide',async()=>{
   const original=JSON.parse(await readFile(new URL('../gpn_quiz_definitions_v1.json',import.meta.url),'utf8'));
-  for(const d of bank){const old=original.find(n=>n.id===d.id);for(const key of Object.keys(d).filter(k=>k!=='distracteursProches'))assert.deepEqual(d[key],old[key],d.id+': '+key);}
+  for(const old of original){const d=bank.find(n=>n.id===old.id);assert.ok(d,old.id+': notion d’origine absente');for(const key of Object.keys(old).filter(k=>k!=='distracteursProches'))assert.deepEqual(d[key],old[key],d.id+': '+key);}
   const before=auditDistractors(original),after=auditDistractors(bank);
   assert.equal(before.references.filter(r=>r.missing).length,41);
   assert.equal(before.references.filter(r=>r.status==='alias').length,2);
