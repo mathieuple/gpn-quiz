@@ -1,0 +1,19 @@
+.leaderboard-card { display: grid; gap: var(--space-4); box-shadow: none; scroll-margin-top: var(--space-4); }
+.leaderboard-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.leaderboard-row { display: grid; grid-template-columns: 38px minmax(0,1fr) auto; align-items: center; gap: var(--space-2); min-height: 48px; padding: var(--space-2); border-bottom: 1px solid var(--line); }
+.leaderboard-row:last-child { border-bottom: 0; }
+.leaderboard-row.is-current { border-radius: var(--radius-sm); background: var(--soft); }
+.leaderboard-rank { text-align: center; font-variant-numeric: tabular-nums; }
+.leaderboard-name { min-width: 0; overflow-wrap: anywhere; font-weight: 650; }
+.leaderboard-you { margin-left: var(--space-2); color: var(--muted); font-weight: 500; }
+.leaderboard-score { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.leaderboard-personal { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-3); padding: var(--space-4); border-radius: var(--radius-md); background: var(--soft); }
+.profile-gate { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; overflow-y: auto; padding: calc(var(--space-5) + env(safe-area-inset-top)) var(--space-4) calc(var(--space-5) + env(safe-area-inset-bottom)); background: var(--bg); }
+.profile-panel { display: grid; gap: var(--space-5); width: min(100%,440px); padding: var(--space-6); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow); }
+.profile-panel > img { width: 104px; height: 104px; object-fit: contain; }
+.profile-panel h1 { margin: var(--space-2) 0; }
+.profile-panel input { font-size: 16px; }
+.profile-panel #profile-error:empty { display: none; }
+body.profile-required { overflow: hidden; }
+body.profile-required > :not(.profile-gate) { visibility: hidden; }
+@media (max-width:420px){.profile-gate{place-items:start center}.profile-panel{padding:var(--space-5)}.leaderboard-row{grid-template-columns:34px minmax(0,1fr) auto}}

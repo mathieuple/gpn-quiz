@@ -1,10 +1,11 @@
 import {combinedMastery} from '../progression/mastery.js';
 import {DAY} from '../progression/spaced-repetition.js';
+import {normalizeLeaderboardProfile} from '../leaderboard/leaderboard-state.js';
 
-export const SCHEMA_VERSION=3;
+export const SCHEMA_VERSION=4;
 export const createDefaultNotionProgress=()=>({mastery:0,recognitionMastery:0,recallMastery:0,timesSeen:0,timesCorrect:0,timesAlmostCorrect:0,timesWrong:0,correctStreak:0,wrongStreak:0,lastSeen:0,lastReviewAt:0,nextReviewAt:0,reviewInterval:0,successfulReviews:0,lastSuccessfulReviewAt:0,updatedAt:0});
 export const createDefaultSettings=()=>({theme:'auto',animations:true,sound:false,updatedAt:0});
-export const defaults=()=>({version:1,schemaVersion:SCHEMA_VERSION,updatedAt:0,statsUpdatedAt:0,xp:0,bestCombo:0,survivalRecord:0,notions:{},confusions:{},settings:createDefaultSettings()});
+export const defaults=()=>({version:1,schemaVersion:SCHEMA_VERSION,updatedAt:0,statsUpdatedAt:0,xp:0,bestCombo:0,survivalRecord:0,notions:{},confusions:{},settings:createDefaultSettings(),profile:normalizeLeaderboardProfile()});
 
 const record=value=>Boolean(value&&typeof value==='object'&&!Array.isArray(value));
 const safeId=id=>typeof id==='string'&&id.trim().length>0&&!['__proto__','constructor','prototype'].includes(id);
@@ -12,7 +13,7 @@ const number=(value,max=Number.MAX_SAFE_INTEGER)=>Number.isFinite(value)?Math.ma
 const date=value=>number(value);
 
 function assertCompatible(input) {
-  if(!record(input)||(input.version!==undefined&&input.version!==1)||(input.schemaVersion!==undefined&&![1,2,3].includes(input.schemaVersion))||(input.schemaRevision!==undefined&&![1,2].includes(input.schemaRevision)))throw new Error('Version ou structure de sauvegarde incompatible.');
+  if(!record(input)||(input.version!==undefined&&input.version!==1)||(input.schemaVersion!==undefined&&![1,2,3,4].includes(input.schemaVersion))||(input.schemaRevision!==undefined&&![1,2].includes(input.schemaRevision)))throw new Error('Version ou structure de sauvegarde incompatible.');
 }
 
 export function migrate(input) {
@@ -45,7 +46,8 @@ export function migrate(input) {
   if(['auto','light','dark'].includes(input.settings?.theme))out.settings.theme=input.settings.theme;
   for(const key of ['animations','sound'])if(typeof input.settings?.[key]==='boolean')out.settings[key]=input.settings[key];
   out.settings.updatedAt=date(input.settings?.updatedAt);
-  const childUpdates=[out.statsUpdatedAt,out.settings.updatedAt,...Object.values(out.notions).map(n=>n.updatedAt),...Object.values(out.confusions).map(c=>c.updatedAt)];
+  out.profile=normalizeLeaderboardProfile(input.profile,out.bestCombo);
+  const childUpdates=[out.statsUpdatedAt,out.settings.updatedAt,out.profile.displayNameUpdatedAt,...Object.values(out.notions).map(n=>n.updatedAt),...Object.values(out.confusions).map(c=>c.updatedAt)];
   out.updatedAt=Math.max(date(input.updatedAt),...childUpdates);
   return out;
 }
@@ -71,6 +73,12 @@ export function validateUserData(input,{requireVersion=false}={}) {
     if(input.settings.theme!==undefined&&!['auto','light','dark'].includes(input.settings.theme))errors.push('settings.theme sera réinitialisé.');
     for(const key of ['animations','sound'])if(input.settings[key]!==undefined&&typeof input.settings[key]!=='boolean')errors.push(`settings.${key} sera réinitialisé.`);
     if(input.settings.updatedAt!==undefined&&(!Number.isFinite(input.settings.updatedAt)||input.settings.updatedAt<0))errors.push('settings.updatedAt contient une date invalide et sera réinitialisé.');
+  }
+  if(input.profile!==undefined&&!record(input.profile))fatal('profile doit être un objet.');
+  if(record(input.profile)){
+    if(input.profile.displayName!==undefined&&typeof input.profile.displayName!=='string')fatal('profile.displayName doit être du texte.');
+    if(input.profile.leaderboardSyncPending!==undefined&&typeof input.profile.leaderboardSyncPending!=='boolean')errors.push('profile.leaderboardSyncPending sera réinitialisé.');
+    for(const key of ['displayNameUpdatedAt','lastSyncedBestCombo'])if(input.profile[key]!==undefined&&(!Number.isFinite(input.profile[key])||input.profile[key]<0))errors.push(`profile.${key} sera réinitialisé.`);
   }
   for(const key of ['updatedAt','statsUpdatedAt'])if(input[key]!==undefined&&(!Number.isFinite(input[key])||input[key]<0))errors.push(`${key} contient une date invalide et sera réinitialisé.`);
   if(fatalErrors.length)return {valid:false,data:null,errors,fatalErrors};

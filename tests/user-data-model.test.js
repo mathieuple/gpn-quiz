@@ -18,7 +18,7 @@ test('création, sauvegarde et rechargement utilisent le schéma utilisateur sta
 test('migration V1 vers le schéma courant sans perte de progression',()=>{
   const legacy={version:1,xp:321,bestCombo:9,survivalRecord:4,settings:{theme:'dark',animations:false,sound:true},notions:{hypoxie:{mastery:68,timesSeen:7,timesCorrect:5,timesWrong:2,lastSeen:NOW,nextReviewAt:NOW+86400000,reviewInterval:1}},confusions:{'anoxie|hypoxie':{count:3,lastSeen:NOW}}};
   const migrated=migrate(legacy);
-  assert.equal(migrated.schemaVersion,SCHEMA_VERSION);assert.equal(migrated.xp,321);assert.equal(migrated.notions.hypoxie.timesSeen,7);assert.equal(migrated.notions.hypoxie.recognitionMastery,68);assert.equal(migrated.notions.hypoxie.nextReviewAt,NOW+86400000);assert.equal(migrated.confusions['anoxie|hypoxie'].count,3);assert.equal(migrated.settings.theme,'dark');
+  assert.equal(migrated.schemaVersion,SCHEMA_VERSION);assert.equal(migrated.xp,321);assert.equal(migrated.bestCombo,9);assert.equal(migrated.notions.hypoxie.timesSeen,7);assert.equal(migrated.notions.hypoxie.recognitionMastery,68);assert.equal(migrated.notions.hypoxie.nextReviewAt,NOW+86400000);assert.equal(migrated.confusions['anoxie|hypoxie'].count,3);assert.equal(migrated.settings.theme,'dark');assert.equal(migrated.profile.displayName,'');assert.equal(migrated.profile.leaderboardSyncPending,false);
 });
 
 test('validation rejette les structures dangereuses et répare les valeurs bornées ou dates invalides',()=>{

@@ -3,6 +3,7 @@ import {escapeHTML as e,stat,bar} from './helpers.js';
 import {getDueNotions} from '../progression/spaced-repetition.js';
 import {dailyPreset} from '../quiz/daily-review.js';
 import {courseQuizOptions} from '../courses/course-session.js';
+import {renderLeaderboardPreview} from '../leaderboard/leaderboard-ui.js';
 
 const modes=[['mixed','◈','Mixte'],['qcm','▦','QCM'],['text','✎','Saisie libre'],['exam','◷','Examen'],['survival','♡','Survie']];
 
@@ -26,6 +27,7 @@ export function home(root,ctx) {
       </div></details>
     </form>
     <section class="card home-progress"><div class="section-title"><h2>Ma progression</h2><a href="#/progress">Voir le détail →</a></div><div class="stats-strip">${stat(s.seen+'/'+ctx.bank.length,'notions explorées')}${stat(ctx.user.xp,'XP récoltés')}${stat(ctx.user.bestCombo,'meilleure série')}</div>${bar(s.coverage,'Couverture des notions')}<p class="small muted">${s.coverage} % de couverture · ${s.studiedMastery} % de maîtrise des notions étudiées</p></section>
+    <section class="card leaderboard-card"><div class="section-title"><h2>🏆 Meilleurs combos</h2><a id="leaderboard-link" href="#/progress">Voir le classement →</a></div><div id="leaderboard-preview" aria-live="polite"></div></section>
   </div>`;
   root.querySelector('#daily-start')?.addEventListener('click',()=>ctx.start(dailyPreset(ctx.bank,ctx.user)));
   const form=root.querySelector('form');
@@ -40,4 +42,6 @@ export function home(root,ctx) {
     const data=new FormData(form),mode=data.get('mode'),count=mode==='exam'&&data.get('count')==='Infinity'?20:Number(data.get('count')),course=ctx.courseIndex.getCourseById(data.get('course'));
     ctx.start(course?{...courseQuizOptions(course),mode,count}:{mode,count,subjects:data.getAll('subject')});
   };
+  root.querySelector('#leaderboard-link').onclick=event=>{event.preventDefault();ctx.navigate('/progress');setTimeout(()=>document.querySelector('#leaderboard')?.scrollIntoView({behavior:'smooth'}),0);};
+  renderLeaderboardPreview(root.querySelector('#leaderboard-preview'),ctx);
 }

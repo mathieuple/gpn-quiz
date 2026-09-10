@@ -1,6 +1,7 @@
 @import url('./variables.css');
 @import url('./components.css');
 @import url('./screens.css');
+@import url('./leaderboard.css');
 
 * { box-sizing: border-box; }
 html { scroll-padding-top: calc(env(safe-area-inset-top) + var(--space-4)); }

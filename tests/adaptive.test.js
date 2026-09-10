@@ -75,7 +75,7 @@ test('dimensions distinctes, gains, pertes, pondération et bornes',()=>{
 test('migration V1 conserve scores, compteurs, réglages et original octet pour octet',()=>{
   const legacy={version:1,xp:1240,bestCombo:12,survivalRecord:27,settings:{theme:'dark',sound:true,animations:false},notions:{hypoxie:{mastery:70,timesSeen:7,timesCorrect:4,timesAlmostCorrect:1,timesWrong:2,correctStreak:1,wrongStreak:0,lastSeen:NOW-DAY*2}}};
   const raw=JSON.stringify(legacy),storage=memory({[LEGACY_KEY]:raw}),user=load(storage);
-  assert.equal(user.schemaVersion,3);assert.equal(user.xp,1240);assert.equal(user.bestCombo,12);assert.equal(user.survivalRecord,27);assert.deepEqual({...user.settings,updatedAt:undefined},{...legacy.settings,updatedAt:undefined});
+  assert.equal(user.schemaVersion,4);assert.equal(user.xp,1240);assert.equal(user.bestCombo,12);assert.equal(user.survivalRecord,27);assert.deepEqual({...user.settings,updatedAt:undefined},{...legacy.settings,updatedAt:undefined});
   for(const [k,v] of Object.entries(legacy.notions.hypoxie))assert.equal(user.notions.hypoxie[k],v);
   assert.equal(user.notions.hypoxie.recognitionMastery,70);assert.equal(user.notions.hypoxie.recallMastery,70);
   assert.ok(save(user,storage));assert.equal(storage.map.get(LEGACY_KEY),raw);assert.equal(load(storage).xp,1240);assert.deepEqual(migrate(user),user);
