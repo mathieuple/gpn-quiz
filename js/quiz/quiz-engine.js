@@ -47,6 +47,6 @@ export class QuizSession {
     if(this.answers.length>=this.limit||(this.options.mode==='survival'&&this.lives<=0))this.finish();
     return entry;
   }
-  apply(a){this.user.notions[a.notion.id]=recordNotion(this.user.notions[a.notion.id],a.result,a.type,a.reviewedAt,a.hint);if(!a.notion.courseQuestion)recordConfusion(this.user,a,this.bank,a.reviewedAt);this.user.xp+=a.xp;this.user.bestCombo=Math.max(this.user.bestCombo,this.best);}
-  finish(){if(this.finished)return;this.finished=true;if(this.options.mode==='exam')this.answers.forEach(a=>this.apply(a));if(this.options.mode==='survival')this.user.survivalRecord=Math.max(this.user.survivalRecord,this.answers.filter(a=>['exact','almost'].includes(a.result)).length);}
+  apply(a){this.user.notions[a.notion.id]=recordNotion(this.user.notions[a.notion.id],a.result,a.type,a.reviewedAt,a.hint);if(!a.notion.courseQuestion)recordConfusion(this.user,a,this.bank,a.reviewedAt);this.user.xp+=a.xp;this.user.bestCombo=Math.max(this.user.bestCombo,this.best);this.user.statsUpdatedAt=a.reviewedAt;this.user.updatedAt=Math.max(this.user.updatedAt||0,a.reviewedAt);}
+  finish(){if(this.finished)return;this.finished=true;if(this.options.mode==='exam')this.answers.forEach(a=>this.apply(a));if(this.options.mode==='survival'){this.user.survivalRecord=Math.max(this.user.survivalRecord,this.answers.filter(a=>['exact','almost'].includes(a.result)).length);const updatedAt=this.answers.at(-1)?.reviewedAt||this.now();this.user.statsUpdatedAt=updatedAt;this.user.updatedAt=Math.max(this.user.updatedAt||0,updatedAt);}}
 }

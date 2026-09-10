@@ -7,10 +7,10 @@ function detail(d,n,ctx) {
   const studied=n.timesSeen>0,score=n.mastery||0;
   const courses=ctx.courseIndex.getCoursesForDefinition(d.id);
   return `<details class="card notion-row"><summary><span><span class="level-dot ${studied?'level-'+level(score):'level-new'}"></span>${e(d.terme)}</span><small class="muted">${studied?score+' %':'Nouvelle'}</small></summary><div class="notion-detail">
-    <p class="small muted">${e(d.matiere)} · ${e(d.theme)}</p><p>${e(d.definitionCourte)}</p><p class="muted small">${e(d.explication)}</p>
+    <p class="small muted">${e(d.matiere)} · ${e(d.theme)}</p><p class="definition-lead">${e(d.definitionCourte)}</p><p class="muted small">${e(d.explication)}</p>
+    ${courses.length?`<div class="definition-courses"><p class="eyebrow">VU DANS</p>${courses.map(course=>`<a href="#/course/${e(course.id)}"><span>${e(course.matiere)}</span><strong>→ ${e(course.titre)}</strong></a>`).join('')}</div>`:''}
     ${studied?`<div class="row small"><span>Reconnaissance</span><strong>${n.recognitionMastery} %</strong></div>${bar(n.recognitionMastery,'Reconnaissance de '+d.terme)}<div class="row small"><span>Rappel actif</span><strong>${n.recallMastery} %</strong></div>${bar(n.recallMastery,'Rappel actif de '+d.terme)}`:''}
     <p class="small">${studied?levels[level(score)]:'⚪ Nouvelle'} · ${n.timesSeen||0} tentatives · ${(n.timesCorrect||0)+(n.timesAlmostCorrect||0)} réussites</p>
-    ${courses.length?`<div class="definition-courses"><p class="eyebrow">VU DANS</p>${courses.map(course=>`<a href="#/course/${e(course.id)}"><span>${e(course.matiere)}</span><strong>→ ${e(course.titre)}</strong></a>`).join('')}</div>`:''}
     <p class="small"><strong>Prochaine révision</strong><br>${nextReviewLabel(n)}</p><p class="small muted">Dernière révision : ${n.lastSeen?new Date(n.lastSeen).toLocaleDateString('fr-FR'):'pas encore explorée'}</p><button class="button" data-revise="${e(d.id)}">Réviser cette notion</button></div></details>`;
 }
 
@@ -26,7 +26,7 @@ export function notions(root,ctx,options={}) {
     root.querySelector('#notion-count').textContent=`${bank.length} notion${bank.length>1?'s':''}`;
     root.querySelector('#notion-list').innerHTML=bank.length?bank.map(d=>detail(d,ctx.user.notions[d.id]||{},ctx).replace('<details ','<details data-notion="'+e(d.id)+'" ')).join(''):'<p class="empty">Aucune notion ne correspond à ces filtres.</p>';
     root.querySelectorAll('[data-revise]').forEach(b=>b.onclick=()=>ctx.start({mode:'mixed',count:1,ids:[b.dataset.revise]}));
-    if(options.definitionId){const target=root.querySelector(`[data-notion="${CSS.escape(options.definitionId)}"]`);if(target){target.open=true;target.scrollIntoView({block:'start'});}}
+    if(options.definitionId){const target=root.querySelector(`[data-notion="${CSS.escape(options.definitionId)}"]`);if(target){target.open=true;requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));}}
   }
   root.querySelector('#search').oninput=render;root.querySelector('#subject').onchange=render;root.querySelector('#level').onchange=render;render();
 }

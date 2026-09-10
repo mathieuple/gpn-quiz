@@ -10,5 +10,5 @@ export function recordNotion(previous={}, result, type, now=Date.now(), hint=fal
   let recall=clampMastery(previous.recallMastery??previous.mastery??0);
   if(type==='qcm') recognition=updateMastery(recognition,result,type);
   else {recall=updateMastery(recall,result,type);if(good)recognition=clampMastery(recognition+(result==='exact'?2:1));}
-  return {...previous,recognitionMastery:recognition,recallMastery:recall,mastery:combinedMastery(recognition,recall),timesSeen:(previous.timesSeen||0)+1,timesCorrect:(previous.timesCorrect||0)+(result==='exact'?1:0),timesAlmostCorrect:(previous.timesAlmostCorrect||0)+(result==='almost'?1:0),timesWrong:(previous.timesWrong||0)+(!good?1:0),correctStreak:good?(previous.correctStreak||0)+1:0,wrongStreak:good?0:(previous.wrongStreak||0)+1,lastSeen:now,...scheduleReview(previous,result,type,now,hint)};
+  return {...previous,recognitionMastery:recognition,recallMastery:recall,mastery:combinedMastery(recognition,recall),timesSeen:(previous.timesSeen||0)+1,timesCorrect:(previous.timesCorrect||0)+(result==='exact'?1:0),timesAlmostCorrect:(previous.timesAlmostCorrect||0)+(result==='almost'?1:0),timesWrong:(previous.timesWrong||0)+(!good?1:0),correctStreak:good?(previous.correctStreak||0)+1:0,wrongStreak:good?0:(previous.wrongStreak||0)+1,lastSeen:now,updatedAt:now,...scheduleReview(previous,result,type,now,hint)};
 }

@@ -14,7 +14,7 @@ export function recordConfusion(user,answer,bank,now=Date.now()) {
   if(!other||other.id===answer.notion.id||areAmbiguous(answer.notion,other))return null;
   user.confusions??={};
   const key=confusionKey(answer.notion.id,other.id);
-  user.confusions[key]={count:(user.confusions[key]?.count||0)+1,lastSeen:now};
+  user.confusions[key]={count:(user.confusions[key]?.count||0)+1,lastSeen:now,updatedAt:now};
   return key;
 }
 export function confusionWeight(id,user) {

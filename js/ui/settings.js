@@ -1,5 +1,5 @@
 import {defaults} from '../storage/migrations.js';
-import {parseImport} from '../storage/storage.js';
+import {parseImport,serializeUserData} from '../storage/storage.js';
 import {applySettings} from './helpers.js';
 
 export function settings(root,ctx) {
@@ -27,8 +27,8 @@ export function settings(root,ctx) {
     </section>
   </div>`;
   root.querySelector('#theme').value=ctx.user.settings.theme;
-  for(const key of ['theme','animations','sound'])root.querySelector('#'+key).onchange=event=>{ctx.user.settings[key]=key==='theme'?event.target.value:event.target.checked;applySettings(ctx.user.settings);ctx.persist();};
-  root.querySelector('#export').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(ctx.user,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='gpn-quiz-progression.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+  for(const key of ['theme','animations','sound'])root.querySelector('#'+key).onchange=event=>{const updatedAt=Date.now();ctx.user.settings[key]=key==='theme'?event.target.value:event.target.checked;ctx.user.settings.updatedAt=updatedAt;ctx.user.updatedAt=updatedAt;applySettings(ctx.user.settings);ctx.persist();};
+  root.querySelector('#export').onclick=()=>{const url=URL.createObjectURL(new Blob([serializeUserData(ctx.user)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='gpn-quiz-progression.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
   root.querySelector('#import').onchange=async event=>{const file=event.target.files[0],status=root.querySelector('#import-status');if(!file)return;try{if(file.size>5000000)throw new Error('Fichier trop volumineux (5 Mo maximum).');const data=parseImport(await file.text());ctx.replaceUser(data);status.textContent='Progression importée. Les données précédentes ont été remplacées.';root.querySelector('#theme').value=data.settings.theme;for(const key of ['animations','sound'])root.querySelector('#'+key).checked=data.settings[key];}catch(error){status.textContent='Import refusé : '+error.message;}event.target.value='';};
   root.querySelector('#reset').onclick=()=>root.querySelector('#reset-confirm').classList.remove('hidden');
   root.querySelector('#cancel-reset').onclick=()=>root.querySelector('#reset-confirm').classList.add('hidden');
