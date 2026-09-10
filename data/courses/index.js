@@ -1,8 +1,9 @@
 import {definitions} from '../definitions.js';
 import {validateCourses} from './validate.js';
 import {odonatesDemo} from './expertise-faunistique/odonates-demo.js';
+import {questCeQueLeGenieEcologique} from './genie-ecologique/quest-ce-que-le-genie-ecologique.js';
 
-export const coursePacks=[odonatesDemo];
+export const coursePacks=[odonatesDemo,questCeQueLeGenieEcologique];
 
 export function createCourseIndex(packs,bank,report=console.warn) {
   const validation=validateCourses(packs,bank,report),courses=[...validation.courses].sort((a,b)=>a.matiere.localeCompare(b.matiere,'fr')||a.ordre-b.ordre||a.titre.localeCompare(b.titre,'fr'));
