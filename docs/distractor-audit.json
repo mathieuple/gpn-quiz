@@ -1,0 +1,6356 @@
+{
+  "counts": {
+    "invalid": 41,
+    "replaced": 2,
+    "removed": 65,
+    "ambiguous": 27,
+    "duplicates": 0,
+    "humanReview": 17
+  },
+  "before": {
+    "references": [
+      {
+        "id": "facteur-abiotique",
+        "reference": "Facteur biotique",
+        "targetId": "facteur-biotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-abiotique",
+        "reference": "Facteur écologique",
+        "targetId": "facteur-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-biotique",
+        "reference": "Facteur abiotique",
+        "targetId": "facteur-abiotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-biotique",
+        "reference": "Facteur écologique",
+        "targetId": "facteur-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-ecologique",
+        "reference": "Facteur abiotique",
+        "targetId": "facteur-abiotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-ecologique",
+        "reference": "Facteur biotique",
+        "targetId": "facteur-biotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biotope",
+        "reference": "Biocénose",
+        "targetId": "biocenose",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biotope",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biotope",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biocenose",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biocenose",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "La banque indique explicitement la proximité des deux termes."
+      },
+      {
+        "id": "biocenose",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecosysteme",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecosysteme",
+        "reference": "Biocénose",
+        "targetId": "biocenose",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecosysteme",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biosphere",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biosphere",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "individu",
+        "reference": "Population",
+        "targetId": "population",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "individu",
+        "reference": "Espèce",
+        "targetId": "espece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "individu",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece",
+        "reference": "Population",
+        "targetId": "population",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece",
+        "reference": "Individu",
+        "targetId": "individu",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "population",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "population",
+        "reference": "Espèce",
+        "targetId": "espece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "population",
+        "reference": "Biocénose",
+        "targetId": "biocenose",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "communaute",
+        "reference": "Population",
+        "targetId": "population",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "communaute",
+        "reference": "Biocénose",
+        "targetId": "biocenose",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "La banque indique explicitement la proximité des deux termes."
+      },
+      {
+        "id": "communaute",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "habitat",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "habitat",
+        "reference": "Niche écologique",
+        "targetId": "niche-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "habitat",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "niche-ecologique",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "niche-ecologique",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "niche-ecologique",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paysage",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paysage",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paysage",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "substrat",
+        "reference": "Sol",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "substrat",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ouvert",
+        "reference": "Milieu fermé",
+        "targetId": "milieu-ferme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ouvert",
+        "reference": "Héliophile",
+        "targetId": "heliophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ferme",
+        "reference": "Milieu ouvert",
+        "targetId": "milieu-ouvert",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ferme",
+        "reference": "Héliophile",
+        "targetId": "heliophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "flore",
+        "reference": "Faune",
+        "targetId": "faune",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "flore",
+        "reference": "Végétation",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "faune",
+        "reference": "Flore",
+        "targetId": "flore",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "faune",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biodiversite",
+        "reference": "Diversité génétique",
+        "targetId": "diversite-genetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biodiversite",
+        "reference": "Diversité spécifique",
+        "targetId": "diversite-specifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biodiversite",
+        "reference": "Diversité écosystémique",
+        "targetId": "diversite-ecosystemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-genetique",
+        "reference": "Diversité spécifique",
+        "targetId": "diversite-specifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-genetique",
+        "reference": "Diversité écosystémique",
+        "targetId": "diversite-ecosystemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-genetique",
+        "reference": "Biodiversité",
+        "targetId": "biodiversite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-specifique",
+        "reference": "Diversité génétique",
+        "targetId": "diversite-genetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-specifique",
+        "reference": "Diversité écosystémique",
+        "targetId": "diversite-ecosystemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-specifique",
+        "reference": "Biodiversité",
+        "targetId": "biodiversite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-ecosystemique",
+        "reference": "Diversité génétique",
+        "targetId": "diversite-genetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-ecosystemique",
+        "reference": "Diversité spécifique",
+        "targetId": "diversite-specifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-ecosystemique",
+        "reference": "Biodiversité",
+        "targetId": "biodiversite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece-exotique-envahissante",
+        "reference": "Espèce autochtone",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece-exotique-envahissante",
+        "reference": "Espèce exotique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bioindicateur",
+        "reference": "Indicateur écologique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bioindicateur",
+        "reference": "Espèce exotique envahissante",
+        "targetId": "espece-exotique-envahissante",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "valence-ecologique",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "valence-ecologique",
+        "reference": "Sténoèce",
+        "targetId": "stenoece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "euryece",
+        "reference": "Sténoèce",
+        "targetId": "stenoece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "euryece",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "euryece",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "eury",
+        "reference": "Sténo-",
+        "targetId": "steno",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "eury",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoece",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoece",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoece",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "steno",
+        "reference": "Eury-",
+        "targetId": "eury",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "steno",
+        "reference": "Sténoèce",
+        "targetId": "stenoece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenotherme",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenotherme",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenotherme",
+        "reference": "Thermophile",
+        "targetId": "thermophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoxybionte",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoxybionte",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoxybionte",
+        "reference": "Anoxie",
+        "targetId": "anoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "heliophile",
+        "reference": "Thermophile",
+        "targetId": "thermophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "heliophile",
+        "reference": "Sciaphile",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thermophile",
+        "reference": "Héliophile",
+        "targetId": "heliophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thermophile",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "resilience-ecologique",
+        "reference": "Résistance écologique",
+        "targetId": "resistance-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "resilience-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "resistance-ecologique",
+        "reference": "Résilience écologique",
+        "targetId": "resilience-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "succession-ecologique",
+        "reference": "Résilience écologique",
+        "targetId": "resilience-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "succession-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "fragmentation",
+        "reference": "Continuité écologique",
+        "targetId": "continuite-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "fragmentation",
+        "reference": "Trame verte et bleue",
+        "targetId": "trame-verte-et-bleue",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "continuite-ecologique",
+        "reference": "Fragmentation",
+        "targetId": "fragmentation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "continuite-ecologique",
+        "reference": "Trame verte et bleue",
+        "targetId": "trame-verte-et-bleue",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "trame-verte-et-bleue",
+        "reference": "Continuité écologique",
+        "targetId": "continuite-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "trame-verte-et-bleue",
+        "reference": "Fragmentation",
+        "targetId": "fragmentation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ripisylve",
+        "reference": "Haie",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ripisylve",
+        "reference": "Forêt alluviale",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "turbidite",
+        "reference": "Sédimentation",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "turbidite",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "etiage",
+        "reference": "Crue",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "etiage",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecotone",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecotone",
+        "reference": "Corridor écologique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-interspecifique",
+        "reference": "Interaction intraspécifique",
+        "targetId": "interaction-intraspecifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-interspecifique",
+        "reference": "Prédation",
+        "targetId": "predation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-interspecifique",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-intraspecifique",
+        "reference": "Interaction interspécifique",
+        "targetId": "interaction-interspecifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-intraspecifique",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "predation",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "predation",
+        "reference": "Herbivorie",
+        "targetId": "herbivorie",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le cours présente herbivorie comme prédation au sens large."
+      },
+      {
+        "id": "predation",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "parasitisme",
+        "reference": "Prédation",
+        "targetId": "predation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "parasitisme",
+        "reference": "Mutualisme",
+        "targetId": "mutualisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "parasitisme",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "herbivorie",
+        "reference": "Prédation",
+        "targetId": "predation",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le cours présente herbivorie comme prédation au sens large."
+      },
+      {
+        "id": "herbivorie",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "mutualisme",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "mutualisme",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "mutualisme",
+        "reference": "Symbiose",
+        "targetId": "symbiose",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "La banque indique plusieurs acceptions de symbiose."
+      },
+      {
+        "id": "competition",
+        "reference": "Mutualisme",
+        "targetId": "mutualisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "competition",
+        "reference": "Prédation",
+        "targetId": "predation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "competition",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "migration",
+        "reference": "Dispersion",
+        "targetId": "dispersion",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "migration",
+        "reference": "Dispersion de reproduction",
+        "targetId": "dispersion-de-reproduction",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion",
+        "reference": "Migration",
+        "targetId": "migration",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion",
+        "reference": "Dispersion de reproduction",
+        "targetId": "dispersion-de-reproduction",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion-de-reproduction",
+        "reference": "Migration",
+        "targetId": "migration",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion-de-reproduction",
+        "reference": "Dispersion",
+        "targetId": "dispersion",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion-de-reproduction",
+        "reference": "Dispersion natale",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "producteur-primaire",
+        "reference": "Consommateur",
+        "targetId": "consommateur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "producteur-primaire",
+        "reference": "Décomposeur",
+        "targetId": "decomposeur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "producteur-primaire",
+        "reference": "Autotrophe",
+        "targetId": "autotrophe",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Définitions presque équivalentes dans cette banque."
+      },
+      {
+        "id": "consommateur",
+        "reference": "Producteur primaire",
+        "targetId": "producteur-primaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "consommateur",
+        "reference": "Décomposeur",
+        "targetId": "decomposeur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "decomposeur",
+        "reference": "Producteur primaire",
+        "targetId": "producteur-primaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "decomposeur",
+        "reference": "Consommateur",
+        "targetId": "consommateur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autotrophe",
+        "reference": "Hétérotrophe",
+        "targetId": "heterotrophe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autotrophe",
+        "reference": "Producteur primaire",
+        "targetId": "producteur-primaire",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Définitions presque équivalentes dans cette banque."
+      },
+      {
+        "id": "heterotrophe",
+        "reference": "Autotrophe",
+        "targetId": "autotrophe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "heterotrophe",
+        "reference": "Consommateur",
+        "targetId": "consommateur",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Définitions largement recouvrantes dans le cours."
+      },
+      {
+        "id": "chaine-trophique",
+        "reference": "Réseau trophique",
+        "targetId": "reseau-trophique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "chaine-trophique",
+        "reference": "Producteur primaire",
+        "targetId": "producteur-primaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "reseau-trophique",
+        "reference": "Chaîne trophique",
+        "targetId": "chaine-trophique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-ecosystemique",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-ecosystemique",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-ecosystemique",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cellule",
+        "reference": "Eucaryote",
+        "targetId": "eucaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cellule",
+        "reference": "Procaryote",
+        "targetId": "procaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "procaryote",
+        "reference": "Eucaryote",
+        "targetId": "eucaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "procaryote",
+        "reference": "Bactérie",
+        "targetId": "bacterie",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le cours définit une bactérie comme un procaryote."
+      },
+      {
+        "id": "eucaryote",
+        "reference": "Procaryote",
+        "targetId": "procaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "eucaryote",
+        "reference": "Bactérie",
+        "targetId": "bacterie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bacterie",
+        "reference": "Eucaryote",
+        "targetId": "eucaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bacterie",
+        "reference": "Cyanobactérie",
+        "targetId": "cyanobacterie",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le cours définit la cyanobactérie comme une bactérie."
+      },
+      {
+        "id": "paroi-cellulaire",
+        "reference": "Membrane plasmique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paroi-cellulaire",
+        "reference": "Plaste",
+        "targetId": "plaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "plaste",
+        "reference": "Chloroplaste",
+        "targetId": "chloroplaste",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le cours définit le chloroplaste comme un type de plaste."
+      },
+      {
+        "id": "plaste",
+        "reference": "Mitochondrie",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "chloroplaste",
+        "reference": "Plaste",
+        "targetId": "plaste",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le cours définit le chloroplaste comme un type de plaste."
+      },
+      {
+        "id": "chloroplaste",
+        "reference": "Cyanobactérie",
+        "targetId": "cyanobacterie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cyanobacterie",
+        "reference": "Bactérie",
+        "targetId": "bacterie",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le cours définit la cyanobactérie comme une bactérie."
+      },
+      {
+        "id": "cyanobacterie",
+        "reference": "Chloroplaste",
+        "targetId": "chloroplaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "endosymbiose",
+        "reference": "Symbiose",
+        "targetId": "symbiose",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Relation explicitement générale/spécifique."
+      },
+      {
+        "id": "endosymbiose",
+        "reference": "Chloroplaste",
+        "targetId": "chloroplaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "symbiose",
+        "reference": "Mutualisme",
+        "targetId": "mutualisme",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "La banque indique plusieurs acceptions de symbiose."
+      },
+      {
+        "id": "symbiose",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Acception large de symbiose explicitement signalée dans le cours."
+      },
+      {
+        "id": "symbiose",
+        "reference": "Endosymbiose",
+        "targetId": "endosymbiose",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Relation explicitement générale/spécifique."
+      },
+      {
+        "id": "photosynthese",
+        "reference": "Respiration cellulaire",
+        "targetId": "respiration-cellulaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "photosynthese",
+        "reference": "Chloroplaste",
+        "targetId": "chloroplaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "respiration-cellulaire",
+        "reference": "Photosynthèse",
+        "targetId": "photosynthese",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "respiration-cellulaire",
+        "reference": "Anaérobie",
+        "targetId": "anaerobie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "metabolite",
+        "reference": "Métabolisme",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "metabolite",
+        "reference": "Enzyme",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "mucilage",
+        "reference": "Paroi cellulaire",
+        "targetId": "paroi-cellulaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "adn",
+        "reference": "Gène",
+        "targetId": "gene",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "adn",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gene",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gene",
+        "reference": "Génotype",
+        "targetId": "genotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gene",
+        "reference": "ADN",
+        "targetId": "adn",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "allele",
+        "reference": "Gène",
+        "targetId": "gene",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "allele",
+        "reference": "Génotype",
+        "targetId": "genotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "genotype",
+        "reference": "Phénotype",
+        "targetId": "phenotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "genotype",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phenotype",
+        "reference": "Génotype",
+        "targetId": "genotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phenotype",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thalle",
+        "reference": "Cormus",
+        "targetId": "cormus",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thalle",
+        "reference": "Cormophyte",
+        "targetId": "cormophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormus",
+        "reference": "Thalle",
+        "targetId": "thalle",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormus",
+        "reference": "Cormophyte",
+        "targetId": "cormophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormophyte",
+        "reference": "Cormus",
+        "targetId": "cormus",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormophyte",
+        "reference": "Thalle",
+        "targetId": "thalle",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormophyte",
+        "reference": "Trachéophyte",
+        "targetId": "tracheophyte",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le sens de cormophyte varie selon les cours."
+      },
+      {
+        "id": "tracheophyte",
+        "reference": "Bryophyte",
+        "targetId": "bryophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "tracheophyte",
+        "reference": "Cormophyte",
+        "targetId": "cormophyte",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le sens de cormophyte varie selon les cours."
+      },
+      {
+        "id": "bryophyte",
+        "reference": "Trachéophyte",
+        "targetId": "tracheophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bryophyte",
+        "reference": "Cormophyte",
+        "targetId": "cormophyte",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le sens de cormophyte varie selon les cours."
+      },
+      {
+        "id": "monophyletique",
+        "reference": "Polyphylétique",
+        "targetId": "polyphyletique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "monophyletique",
+        "reference": "Paraphylétique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "polyphyletique",
+        "reference": "Monophylétique",
+        "targetId": "monophyletique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "polyphyletique",
+        "reference": "Paraphylétique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phylogenie",
+        "reference": "Arbre phylogénétique",
+        "targetId": "arbre-phylogenetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phylogenie",
+        "reference": "Classification",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "arbre-phylogenetique",
+        "reference": "Phylogénie",
+        "targetId": "phylogenie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "arbre-phylogenetique",
+        "reference": "Monophylétique",
+        "targetId": "monophyletique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-muscinale",
+        "reference": "Strate herbacée",
+        "targetId": "strate-herbacee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-muscinale",
+        "reference": "Strate arbustive",
+        "targetId": "strate-arbustive",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-herbacee",
+        "reference": "Strate arbustive",
+        "targetId": "strate-arbustive",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-herbacee",
+        "reference": "Strate muscinale",
+        "targetId": "strate-muscinale",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arbustive",
+        "reference": "Strate herbacée",
+        "targetId": "strate-herbacee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arbustive",
+        "reference": "Strate arborescente",
+        "targetId": "strate-arborescente",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arborescente",
+        "reference": "Strate arbustive",
+        "targetId": "strate-arbustive",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arborescente",
+        "reference": "Strate herbacée",
+        "targetId": "strate-herbacee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "limbe",
+        "reference": "Pétiole",
+        "targetId": "petiole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "limbe",
+        "reference": "Stipule",
+        "targetId": "stipule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "limbe",
+        "reference": "Foliole",
+        "targetId": "foliole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "petiole",
+        "reference": "Pédoncule",
+        "targetId": "pedoncule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "petiole",
+        "reference": "Limbe",
+        "targetId": "limbe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "petiole",
+        "reference": "Stipule",
+        "targetId": "stipule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stipule",
+        "reference": "Foliole",
+        "targetId": "foliole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stipule",
+        "reference": "Pétiole",
+        "targetId": "petiole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stipule",
+        "reference": "Limbe",
+        "targetId": "limbe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "foliole",
+        "reference": "Limbe",
+        "targetId": "limbe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "foliole",
+        "reference": "Stipule",
+        "targetId": "stipule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "foliole",
+        "reference": "Feuille simple",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "pedoncule",
+        "reference": "Pétiole",
+        "targetId": "petiole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "pedoncule",
+        "reference": "Rameau",
+        "targetId": "rameau",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "rameau",
+        "reference": "Tige",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "rameau",
+        "reference": "Pédoncule",
+        "targetId": "pedoncule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-elliptique",
+        "reference": "Feuille lancéolée",
+        "targetId": "feuille-lanceolee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-elliptique",
+        "reference": "Feuille linéaire",
+        "targetId": "feuille-lineaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lanceolee",
+        "reference": "Feuille elliptique",
+        "targetId": "feuille-elliptique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lanceolee",
+        "reference": "Feuille linéaire",
+        "targetId": "feuille-lineaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lineaire",
+        "reference": "Feuille lancéolée",
+        "targetId": "feuille-lanceolee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lineaire",
+        "reference": "Feuille elliptique",
+        "targetId": "feuille-elliptique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dioique",
+        "reference": "Monoïque",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dioique",
+        "reference": "Hermaphrodite",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "fabacee",
+        "reference": "Poacée",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "fabacee",
+        "reference": "Rosacée",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phytologie",
+        "reference": "Phytosociologie",
+        "targetId": "phytosociologie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phytologie",
+        "reference": "Botanique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "La définition de Phytologie indique le synonyme Botanique."
+      },
+      {
+        "id": "phytosociologie",
+        "reference": "Phytologie",
+        "targetId": "phytologie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phytosociologie",
+        "reference": "Braun-Blanquet",
+        "targetId": "braun-blanquet",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "releve-phytosociologique",
+        "reference": "Braun-Blanquet",
+        "targetId": "braun-blanquet",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "releve-phytosociologique",
+        "reference": "Abondance-dominance",
+        "targetId": "abondance-dominance",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "braun-blanquet",
+        "reference": "Abondance-dominance",
+        "targetId": "abondance-dominance",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le nom désigne aussi une échelle dans la banque."
+      },
+      {
+        "id": "braun-blanquet",
+        "reference": "Relevé phytosociologique",
+        "targetId": "releve-phytosociologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "abondance-dominance",
+        "reference": "Braun-Blanquet",
+        "targetId": "braun-blanquet",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Le nom désigne aussi une échelle dans la banque."
+      },
+      {
+        "id": "abondance-dominance",
+        "reference": "Recouvrement",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "aire-minimale",
+        "reference": "Représentativité",
+        "targetId": "representativite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "aire-minimale",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "representativite",
+        "reference": "Aire minimale",
+        "targetId": "aire-minimale",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "representativite",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "inventaire",
+        "reference": "Suivi",
+        "targetId": "suivi",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "inventaire",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi",
+        "reference": "Inventaire",
+        "targetId": "inventaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "echantillonnage",
+        "reference": "Inventaire",
+        "targetId": "inventaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "echantillonnage",
+        "reference": "Représentativité",
+        "targetId": "representativite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "transect",
+        "reference": "Quadrat",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "transect",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "observation-directe",
+        "reference": "Observation indirecte",
+        "targetId": "observation-indirecte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "observation-indirecte",
+        "reference": "Observation directe",
+        "targetId": "observation-directe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "observation-indirecte",
+        "reference": "Indice de présence",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "odonate",
+        "reference": "Anisoptère",
+        "targetId": "anisoptere",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Relation de catégorie générale à sous-groupe."
+      },
+      {
+        "id": "odonate",
+        "reference": "Zygoptère",
+        "targetId": "zygoptere",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Relation de catégorie générale à sous-groupe."
+      },
+      {
+        "id": "anisoptere",
+        "reference": "Zygoptère",
+        "targetId": "zygoptere",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anisoptere",
+        "reference": "Odonate",
+        "targetId": "odonate",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Relation de catégorie générale à sous-groupe."
+      },
+      {
+        "id": "zygoptere",
+        "reference": "Anisoptère",
+        "targetId": "anisoptere",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "zygoptere",
+        "reference": "Odonate",
+        "targetId": "odonate",
+        "status": "ambiguous",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": "Relation de catégorie générale à sous-groupe."
+      },
+      {
+        "id": "hemimetabole",
+        "reference": "Holométabole",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hemimetabole",
+        "reference": "Imago",
+        "targetId": "imago",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "imago",
+        "reference": "Exuvie",
+        "targetId": "exuvie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "imago",
+        "reference": "Larve",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "imago",
+        "reference": "Émergence",
+        "targetId": "emergence",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "exuvie",
+        "reference": "Imago",
+        "targetId": "imago",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "exuvie",
+        "reference": "Émergence",
+        "targetId": "emergence",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "emergence",
+        "reference": "Exuvie",
+        "targetId": "exuvie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "emergence",
+        "reference": "Imago",
+        "targetId": "imago",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autochtonie",
+        "reference": "Autochtone",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autochtonie",
+        "reference": "Exuvie",
+        "targetId": "exuvie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autochtonie",
+        "reference": "Migration",
+        "targetId": "migration",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phenologie",
+        "reference": "Cycle biologique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phenologie",
+        "reference": "Autochtonie",
+        "targetId": "autochtonie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "pronotum",
+        "reference": "Prothorax",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "pronotum",
+        "reference": "Ommatidie",
+        "targetId": "ommatidie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ommatidie",
+        "reference": "Ocelle",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ommatidie",
+        "reference": "Pronotum",
+        "targetId": "pronotum",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hamuli",
+        "reference": "Lame vulvaire",
+        "targetId": "lame-vulvaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hamuli",
+        "reference": "Cercoïdes",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "lame-vulvaire",
+        "reference": "Hamuli",
+        "targetId": "hamuli",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "lame-vulvaire",
+        "reference": "Ovipositeur",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hypoxie",
+        "reference": "Anoxie",
+        "targetId": "anoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hypoxie",
+        "reference": "Anaérobie",
+        "targetId": "anaerobie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hypoxie",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anoxie",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anoxie",
+        "reference": "Anaérobie",
+        "targetId": "anaerobie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anaerobie",
+        "reference": "Anoxie",
+        "targetId": "anoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anaerobie",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anaerobie",
+        "reference": "Aérobie",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "genie-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "genie-ecologique",
+        "reference": "Gestion écologique",
+        "targetId": null,
+        "status": "missing",
+        "missing": true,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "approche-systemique",
+        "reference": "Diagnostic",
+        "targetId": "diagnostic-ecologique",
+        "status": "alias",
+        "missing": true,
+        "duplicate": false,
+        "synonym": true,
+        "reason": ""
+      },
+      {
+        "id": "approche-systemique",
+        "reference": "État des lieux",
+        "targetId": "etat-des-lieux",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "etat-des-lieux",
+        "reference": "Diagnostic",
+        "targetId": "diagnostic-ecologique",
+        "status": "alias",
+        "missing": true,
+        "duplicate": false,
+        "synonym": true,
+        "reason": ""
+      },
+      {
+        "id": "etat-des-lieux",
+        "reference": "Suivi",
+        "targetId": "suivi",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diagnostic-ecologique",
+        "reference": "État des lieux",
+        "targetId": "etat-des-lieux",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diagnostic-ecologique",
+        "reference": "Objectif écologique",
+        "targetId": "objectif-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "objectif-ecologique",
+        "reference": "Diagnostic écologique",
+        "targetId": "diagnostic-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "objectif-ecologique",
+        "reference": "Suivi",
+        "targetId": "suivi",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "travaux-de-genie-ecologique",
+        "reference": "Entretien écologique",
+        "targetId": "entretien-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "travaux-de-genie-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi-ecologique",
+        "reference": "Diagnostic écologique",
+        "targetId": "diagnostic-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi-ecologique",
+        "reference": "État des lieux",
+        "targetId": "etat-des-lieux",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gestion-adaptative",
+        "reference": "Suivi écologique",
+        "targetId": "suivi-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gestion-adaptative",
+        "reference": "Approche systémique",
+        "targetId": "approche-systemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "entretien-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "entretien-ecologique",
+        "reference": "Réhabilitation écologique",
+        "targetId": "rehabilitation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "restauration-ecologique",
+        "reference": "Réhabilitation écologique",
+        "targetId": "rehabilitation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "restauration-ecologique",
+        "reference": "Réaffectation écologique",
+        "targetId": "reaffectation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "restauration-ecologique",
+        "reference": "Entretien écologique",
+        "targetId": "entretien-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "rehabilitation-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "rehabilitation-ecologique",
+        "reference": "Réaffectation écologique",
+        "targetId": "reaffectation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "reaffectation-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "reaffectation-ecologique",
+        "reference": "Réhabilitation écologique",
+        "targetId": "rehabilitation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-dapprovisionnement",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-dapprovisionnement",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-dapprovisionnement",
+        "reference": "Service de support",
+        "targetId": "service-de-support",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-regulation",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-regulation",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-regulation",
+        "reference": "Service de support",
+        "targetId": "service-de-support",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-culturel",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-culturel",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-culturel",
+        "reference": "Service de support",
+        "targetId": "service-de-support",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-support",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-support",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-support",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      }
+    ],
+    "equivalences": [
+      {
+        "ids": [
+          "biocenose",
+          "communaute"
+        ],
+        "reason": "La banque indique explicitement la proximité des deux termes."
+      },
+      {
+        "ids": [
+          "predation",
+          "herbivorie"
+        ],
+        "reason": "Le cours présente herbivorie comme prédation au sens large."
+      },
+      {
+        "ids": [
+          "parasitisme",
+          "symbiose"
+        ],
+        "reason": "Acception large de symbiose explicitement signalée dans le cours."
+      },
+      {
+        "ids": [
+          "mutualisme",
+          "symbiose"
+        ],
+        "reason": "La banque indique plusieurs acceptions de symbiose."
+      },
+      {
+        "ids": [
+          "producteur-primaire",
+          "autotrophe"
+        ],
+        "reason": "Définitions presque équivalentes dans cette banque."
+      },
+      {
+        "ids": [
+          "consommateur",
+          "heterotrophe"
+        ],
+        "reason": "Définitions largement recouvrantes dans le cours."
+      },
+      {
+        "ids": [
+          "procaryote",
+          "bacterie"
+        ],
+        "reason": "Le cours définit une bactérie comme un procaryote."
+      },
+      {
+        "ids": [
+          "bacterie",
+          "cyanobacterie"
+        ],
+        "reason": "Le cours définit la cyanobactérie comme une bactérie."
+      },
+      {
+        "ids": [
+          "plaste",
+          "chloroplaste"
+        ],
+        "reason": "Le cours définit le chloroplaste comme un type de plaste."
+      },
+      {
+        "ids": [
+          "endosymbiose",
+          "symbiose"
+        ],
+        "reason": "Relation explicitement générale/spécifique."
+      },
+      {
+        "ids": [
+          "cormophyte",
+          "tracheophyte"
+        ],
+        "reason": "Le sens de cormophyte varie selon les cours."
+      },
+      {
+        "ids": [
+          "cormophyte",
+          "bryophyte"
+        ],
+        "reason": "Le sens de cormophyte varie selon les cours."
+      },
+      {
+        "ids": [
+          "braun-blanquet",
+          "abondance-dominance"
+        ],
+        "reason": "Le nom désigne aussi une échelle dans la banque."
+      },
+      {
+        "ids": [
+          "suivi",
+          "suivi-ecologique"
+        ],
+        "reason": "Terme ou variante officielle partagé"
+      },
+      {
+        "ids": [
+          "odonate",
+          "anisoptere"
+        ],
+        "reason": "Relation de catégorie générale à sous-groupe."
+      },
+      {
+        "ids": [
+          "odonate",
+          "zygoptere"
+        ],
+        "reason": "Relation de catégorie générale à sous-groupe."
+      }
+    ]
+  },
+  "after": {
+    "references": [
+      {
+        "id": "facteur-abiotique",
+        "reference": "Facteur biotique",
+        "targetId": "facteur-biotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-abiotique",
+        "reference": "Facteur écologique",
+        "targetId": "facteur-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-biotique",
+        "reference": "Facteur abiotique",
+        "targetId": "facteur-abiotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-biotique",
+        "reference": "Facteur écologique",
+        "targetId": "facteur-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-ecologique",
+        "reference": "Facteur abiotique",
+        "targetId": "facteur-abiotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "facteur-ecologique",
+        "reference": "Facteur biotique",
+        "targetId": "facteur-biotique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biotope",
+        "reference": "Biocénose",
+        "targetId": "biocenose",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biotope",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biotope",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biocenose",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biocenose",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecosysteme",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecosysteme",
+        "reference": "Biocénose",
+        "targetId": "biocenose",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecosysteme",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biosphere",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biosphere",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "individu",
+        "reference": "Population",
+        "targetId": "population",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "individu",
+        "reference": "Espèce",
+        "targetId": "espece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "individu",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece",
+        "reference": "Population",
+        "targetId": "population",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "espece",
+        "reference": "Individu",
+        "targetId": "individu",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "population",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "population",
+        "reference": "Espèce",
+        "targetId": "espece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "population",
+        "reference": "Biocénose",
+        "targetId": "biocenose",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "communaute",
+        "reference": "Population",
+        "targetId": "population",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "communaute",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "habitat",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "habitat",
+        "reference": "Niche écologique",
+        "targetId": "niche-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "habitat",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "niche-ecologique",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "niche-ecologique",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "niche-ecologique",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paysage",
+        "reference": "Écosystème",
+        "targetId": "ecosysteme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paysage",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paysage",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "substrat",
+        "reference": "Biotope",
+        "targetId": "biotope",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ouvert",
+        "reference": "Milieu fermé",
+        "targetId": "milieu-ferme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ouvert",
+        "reference": "Héliophile",
+        "targetId": "heliophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ferme",
+        "reference": "Milieu ouvert",
+        "targetId": "milieu-ouvert",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "milieu-ferme",
+        "reference": "Héliophile",
+        "targetId": "heliophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "flore",
+        "reference": "Faune",
+        "targetId": "faune",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "faune",
+        "reference": "Flore",
+        "targetId": "flore",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "faune",
+        "reference": "Communauté",
+        "targetId": "communaute",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biodiversite",
+        "reference": "Diversité génétique",
+        "targetId": "diversite-genetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biodiversite",
+        "reference": "Diversité spécifique",
+        "targetId": "diversite-specifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "biodiversite",
+        "reference": "Diversité écosystémique",
+        "targetId": "diversite-ecosystemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-genetique",
+        "reference": "Diversité spécifique",
+        "targetId": "diversite-specifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-genetique",
+        "reference": "Diversité écosystémique",
+        "targetId": "diversite-ecosystemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-genetique",
+        "reference": "Biodiversité",
+        "targetId": "biodiversite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-specifique",
+        "reference": "Diversité génétique",
+        "targetId": "diversite-genetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-specifique",
+        "reference": "Diversité écosystémique",
+        "targetId": "diversite-ecosystemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-specifique",
+        "reference": "Biodiversité",
+        "targetId": "biodiversite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-ecosystemique",
+        "reference": "Diversité génétique",
+        "targetId": "diversite-genetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-ecosystemique",
+        "reference": "Diversité spécifique",
+        "targetId": "diversite-specifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diversite-ecosystemique",
+        "reference": "Biodiversité",
+        "targetId": "biodiversite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bioindicateur",
+        "reference": "Espèce exotique envahissante",
+        "targetId": "espece-exotique-envahissante",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "valence-ecologique",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "valence-ecologique",
+        "reference": "Sténoèce",
+        "targetId": "stenoece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "euryece",
+        "reference": "Sténoèce",
+        "targetId": "stenoece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "euryece",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "euryece",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "eury",
+        "reference": "Sténo-",
+        "targetId": "steno",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "eury",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoece",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoece",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoece",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "steno",
+        "reference": "Eury-",
+        "targetId": "eury",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "steno",
+        "reference": "Sténoèce",
+        "targetId": "stenoece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenotherme",
+        "reference": "Euryèce",
+        "targetId": "euryece",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenotherme",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenotherme",
+        "reference": "Thermophile",
+        "targetId": "thermophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoxybionte",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoxybionte",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stenoxybionte",
+        "reference": "Anoxie",
+        "targetId": "anoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "heliophile",
+        "reference": "Thermophile",
+        "targetId": "thermophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thermophile",
+        "reference": "Héliophile",
+        "targetId": "heliophile",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thermophile",
+        "reference": "Sténotherme",
+        "targetId": "stenotherme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "resilience-ecologique",
+        "reference": "Résistance écologique",
+        "targetId": "resistance-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "resilience-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "resistance-ecologique",
+        "reference": "Résilience écologique",
+        "targetId": "resilience-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "succession-ecologique",
+        "reference": "Résilience écologique",
+        "targetId": "resilience-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "succession-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "fragmentation",
+        "reference": "Continuité écologique",
+        "targetId": "continuite-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "fragmentation",
+        "reference": "Trame verte et bleue",
+        "targetId": "trame-verte-et-bleue",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "continuite-ecologique",
+        "reference": "Fragmentation",
+        "targetId": "fragmentation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "continuite-ecologique",
+        "reference": "Trame verte et bleue",
+        "targetId": "trame-verte-et-bleue",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "trame-verte-et-bleue",
+        "reference": "Continuité écologique",
+        "targetId": "continuite-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "trame-verte-et-bleue",
+        "reference": "Fragmentation",
+        "targetId": "fragmentation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "turbidite",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "etiage",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ecotone",
+        "reference": "Habitat",
+        "targetId": "habitat",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-interspecifique",
+        "reference": "Interaction intraspécifique",
+        "targetId": "interaction-intraspecifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-interspecifique",
+        "reference": "Prédation",
+        "targetId": "predation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-interspecifique",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-intraspecifique",
+        "reference": "Interaction interspécifique",
+        "targetId": "interaction-interspecifique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "interaction-intraspecifique",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "predation",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "predation",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "parasitisme",
+        "reference": "Prédation",
+        "targetId": "predation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "parasitisme",
+        "reference": "Mutualisme",
+        "targetId": "mutualisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "parasitisme",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "herbivorie",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "mutualisme",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "mutualisme",
+        "reference": "Compétition",
+        "targetId": "competition",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "competition",
+        "reference": "Mutualisme",
+        "targetId": "mutualisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "competition",
+        "reference": "Prédation",
+        "targetId": "predation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "competition",
+        "reference": "Parasitisme",
+        "targetId": "parasitisme",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "migration",
+        "reference": "Dispersion",
+        "targetId": "dispersion",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "migration",
+        "reference": "Dispersion de reproduction",
+        "targetId": "dispersion-de-reproduction",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion",
+        "reference": "Migration",
+        "targetId": "migration",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion",
+        "reference": "Dispersion de reproduction",
+        "targetId": "dispersion-de-reproduction",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion-de-reproduction",
+        "reference": "Migration",
+        "targetId": "migration",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "dispersion-de-reproduction",
+        "reference": "Dispersion",
+        "targetId": "dispersion",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "producteur-primaire",
+        "reference": "Consommateur",
+        "targetId": "consommateur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "producteur-primaire",
+        "reference": "Décomposeur",
+        "targetId": "decomposeur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "consommateur",
+        "reference": "Producteur primaire",
+        "targetId": "producteur-primaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "consommateur",
+        "reference": "Décomposeur",
+        "targetId": "decomposeur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "decomposeur",
+        "reference": "Producteur primaire",
+        "targetId": "producteur-primaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "decomposeur",
+        "reference": "Consommateur",
+        "targetId": "consommateur",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autotrophe",
+        "reference": "Hétérotrophe",
+        "targetId": "heterotrophe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "heterotrophe",
+        "reference": "Autotrophe",
+        "targetId": "autotrophe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "chaine-trophique",
+        "reference": "Réseau trophique",
+        "targetId": "reseau-trophique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "chaine-trophique",
+        "reference": "Producteur primaire",
+        "targetId": "producteur-primaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "reseau-trophique",
+        "reference": "Chaîne trophique",
+        "targetId": "chaine-trophique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-ecosystemique",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-ecosystemique",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-ecosystemique",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cellule",
+        "reference": "Eucaryote",
+        "targetId": "eucaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cellule",
+        "reference": "Procaryote",
+        "targetId": "procaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "procaryote",
+        "reference": "Eucaryote",
+        "targetId": "eucaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "eucaryote",
+        "reference": "Procaryote",
+        "targetId": "procaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "eucaryote",
+        "reference": "Bactérie",
+        "targetId": "bacterie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bacterie",
+        "reference": "Eucaryote",
+        "targetId": "eucaryote",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "paroi-cellulaire",
+        "reference": "Plaste",
+        "targetId": "plaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "chloroplaste",
+        "reference": "Cyanobactérie",
+        "targetId": "cyanobacterie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cyanobacterie",
+        "reference": "Chloroplaste",
+        "targetId": "chloroplaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "endosymbiose",
+        "reference": "Chloroplaste",
+        "targetId": "chloroplaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "photosynthese",
+        "reference": "Respiration cellulaire",
+        "targetId": "respiration-cellulaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "photosynthese",
+        "reference": "Chloroplaste",
+        "targetId": "chloroplaste",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "respiration-cellulaire",
+        "reference": "Photosynthèse",
+        "targetId": "photosynthese",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "respiration-cellulaire",
+        "reference": "Anaérobie",
+        "targetId": "anaerobie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "mucilage",
+        "reference": "Paroi cellulaire",
+        "targetId": "paroi-cellulaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "adn",
+        "reference": "Gène",
+        "targetId": "gene",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "adn",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gene",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gene",
+        "reference": "Génotype",
+        "targetId": "genotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gene",
+        "reference": "ADN",
+        "targetId": "adn",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "allele",
+        "reference": "Gène",
+        "targetId": "gene",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "allele",
+        "reference": "Génotype",
+        "targetId": "genotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "genotype",
+        "reference": "Phénotype",
+        "targetId": "phenotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "genotype",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phenotype",
+        "reference": "Génotype",
+        "targetId": "genotype",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phenotype",
+        "reference": "Allèle",
+        "targetId": "allele",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thalle",
+        "reference": "Cormus",
+        "targetId": "cormus",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "thalle",
+        "reference": "Cormophyte",
+        "targetId": "cormophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormus",
+        "reference": "Thalle",
+        "targetId": "thalle",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormus",
+        "reference": "Cormophyte",
+        "targetId": "cormophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormophyte",
+        "reference": "Cormus",
+        "targetId": "cormus",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "cormophyte",
+        "reference": "Thalle",
+        "targetId": "thalle",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "tracheophyte",
+        "reference": "Bryophyte",
+        "targetId": "bryophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "bryophyte",
+        "reference": "Trachéophyte",
+        "targetId": "tracheophyte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "monophyletique",
+        "reference": "Polyphylétique",
+        "targetId": "polyphyletique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "polyphyletique",
+        "reference": "Monophylétique",
+        "targetId": "monophyletique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phylogenie",
+        "reference": "Arbre phylogénétique",
+        "targetId": "arbre-phylogenetique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "arbre-phylogenetique",
+        "reference": "Phylogénie",
+        "targetId": "phylogenie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "arbre-phylogenetique",
+        "reference": "Monophylétique",
+        "targetId": "monophyletique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-muscinale",
+        "reference": "Strate herbacée",
+        "targetId": "strate-herbacee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-muscinale",
+        "reference": "Strate arbustive",
+        "targetId": "strate-arbustive",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-herbacee",
+        "reference": "Strate arbustive",
+        "targetId": "strate-arbustive",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-herbacee",
+        "reference": "Strate muscinale",
+        "targetId": "strate-muscinale",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arbustive",
+        "reference": "Strate herbacée",
+        "targetId": "strate-herbacee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arbustive",
+        "reference": "Strate arborescente",
+        "targetId": "strate-arborescente",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arborescente",
+        "reference": "Strate arbustive",
+        "targetId": "strate-arbustive",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "strate-arborescente",
+        "reference": "Strate herbacée",
+        "targetId": "strate-herbacee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "limbe",
+        "reference": "Pétiole",
+        "targetId": "petiole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "limbe",
+        "reference": "Stipule",
+        "targetId": "stipule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "limbe",
+        "reference": "Foliole",
+        "targetId": "foliole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "petiole",
+        "reference": "Pédoncule",
+        "targetId": "pedoncule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "petiole",
+        "reference": "Limbe",
+        "targetId": "limbe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "petiole",
+        "reference": "Stipule",
+        "targetId": "stipule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stipule",
+        "reference": "Foliole",
+        "targetId": "foliole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stipule",
+        "reference": "Pétiole",
+        "targetId": "petiole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "stipule",
+        "reference": "Limbe",
+        "targetId": "limbe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "foliole",
+        "reference": "Limbe",
+        "targetId": "limbe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "foliole",
+        "reference": "Stipule",
+        "targetId": "stipule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "pedoncule",
+        "reference": "Pétiole",
+        "targetId": "petiole",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "pedoncule",
+        "reference": "Rameau",
+        "targetId": "rameau",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "rameau",
+        "reference": "Pédoncule",
+        "targetId": "pedoncule",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-elliptique",
+        "reference": "Feuille lancéolée",
+        "targetId": "feuille-lanceolee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-elliptique",
+        "reference": "Feuille linéaire",
+        "targetId": "feuille-lineaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lanceolee",
+        "reference": "Feuille elliptique",
+        "targetId": "feuille-elliptique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lanceolee",
+        "reference": "Feuille linéaire",
+        "targetId": "feuille-lineaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lineaire",
+        "reference": "Feuille lancéolée",
+        "targetId": "feuille-lanceolee",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "feuille-lineaire",
+        "reference": "Feuille elliptique",
+        "targetId": "feuille-elliptique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phytologie",
+        "reference": "Phytosociologie",
+        "targetId": "phytosociologie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phytosociologie",
+        "reference": "Phytologie",
+        "targetId": "phytologie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phytosociologie",
+        "reference": "Braun-Blanquet",
+        "targetId": "braun-blanquet",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "releve-phytosociologique",
+        "reference": "Braun-Blanquet",
+        "targetId": "braun-blanquet",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "releve-phytosociologique",
+        "reference": "Abondance-dominance",
+        "targetId": "abondance-dominance",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "braun-blanquet",
+        "reference": "Relevé phytosociologique",
+        "targetId": "releve-phytosociologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "aire-minimale",
+        "reference": "Représentativité",
+        "targetId": "representativite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "aire-minimale",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "representativite",
+        "reference": "Aire minimale",
+        "targetId": "aire-minimale",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "representativite",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "inventaire",
+        "reference": "Suivi",
+        "targetId": "suivi",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "inventaire",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi",
+        "reference": "Inventaire",
+        "targetId": "inventaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "echantillonnage",
+        "reference": "Inventaire",
+        "targetId": "inventaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "echantillonnage",
+        "reference": "Représentativité",
+        "targetId": "representativite",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "transect",
+        "reference": "Échantillonnage",
+        "targetId": "echantillonnage",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "observation-directe",
+        "reference": "Observation indirecte",
+        "targetId": "observation-indirecte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "observation-indirecte",
+        "reference": "Observation directe",
+        "targetId": "observation-directe",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anisoptere",
+        "reference": "Zygoptère",
+        "targetId": "zygoptere",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "zygoptere",
+        "reference": "Anisoptère",
+        "targetId": "anisoptere",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hemimetabole",
+        "reference": "Imago",
+        "targetId": "imago",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "imago",
+        "reference": "Exuvie",
+        "targetId": "exuvie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "imago",
+        "reference": "Émergence",
+        "targetId": "emergence",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "exuvie",
+        "reference": "Imago",
+        "targetId": "imago",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "exuvie",
+        "reference": "Émergence",
+        "targetId": "emergence",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "emergence",
+        "reference": "Exuvie",
+        "targetId": "exuvie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "emergence",
+        "reference": "Imago",
+        "targetId": "imago",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autochtonie",
+        "reference": "Exuvie",
+        "targetId": "exuvie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "autochtonie",
+        "reference": "Migration",
+        "targetId": "migration",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "phenologie",
+        "reference": "Autochtonie",
+        "targetId": "autochtonie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "pronotum",
+        "reference": "Ommatidie",
+        "targetId": "ommatidie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "ommatidie",
+        "reference": "Pronotum",
+        "targetId": "pronotum",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hamuli",
+        "reference": "Lame vulvaire",
+        "targetId": "lame-vulvaire",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "lame-vulvaire",
+        "reference": "Hamuli",
+        "targetId": "hamuli",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hypoxie",
+        "reference": "Anoxie",
+        "targetId": "anoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hypoxie",
+        "reference": "Anaérobie",
+        "targetId": "anaerobie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "hypoxie",
+        "reference": "Sténoxybionte",
+        "targetId": "stenoxybionte",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anoxie",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anoxie",
+        "reference": "Anaérobie",
+        "targetId": "anaerobie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anaerobie",
+        "reference": "Anoxie",
+        "targetId": "anoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "anaerobie",
+        "reference": "Hypoxie",
+        "targetId": "hypoxie",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "genie-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "approche-systemique",
+        "reference": "Diagnostic écologique",
+        "targetId": "diagnostic-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "approche-systemique",
+        "reference": "État des lieux",
+        "targetId": "etat-des-lieux",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "etat-des-lieux",
+        "reference": "Diagnostic écologique",
+        "targetId": "diagnostic-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "etat-des-lieux",
+        "reference": "Suivi",
+        "targetId": "suivi",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diagnostic-ecologique",
+        "reference": "État des lieux",
+        "targetId": "etat-des-lieux",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "diagnostic-ecologique",
+        "reference": "Objectif écologique",
+        "targetId": "objectif-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "objectif-ecologique",
+        "reference": "Diagnostic écologique",
+        "targetId": "diagnostic-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "objectif-ecologique",
+        "reference": "Suivi",
+        "targetId": "suivi",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "travaux-de-genie-ecologique",
+        "reference": "Entretien écologique",
+        "targetId": "entretien-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "travaux-de-genie-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi-ecologique",
+        "reference": "Diagnostic écologique",
+        "targetId": "diagnostic-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "suivi-ecologique",
+        "reference": "État des lieux",
+        "targetId": "etat-des-lieux",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gestion-adaptative",
+        "reference": "Suivi écologique",
+        "targetId": "suivi-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "gestion-adaptative",
+        "reference": "Approche systémique",
+        "targetId": "approche-systemique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "entretien-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "entretien-ecologique",
+        "reference": "Réhabilitation écologique",
+        "targetId": "rehabilitation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "restauration-ecologique",
+        "reference": "Réhabilitation écologique",
+        "targetId": "rehabilitation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "restauration-ecologique",
+        "reference": "Réaffectation écologique",
+        "targetId": "reaffectation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "restauration-ecologique",
+        "reference": "Entretien écologique",
+        "targetId": "entretien-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "rehabilitation-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "rehabilitation-ecologique",
+        "reference": "Réaffectation écologique",
+        "targetId": "reaffectation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "reaffectation-ecologique",
+        "reference": "Restauration écologique",
+        "targetId": "restauration-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "reaffectation-ecologique",
+        "reference": "Réhabilitation écologique",
+        "targetId": "rehabilitation-ecologique",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-dapprovisionnement",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-dapprovisionnement",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-dapprovisionnement",
+        "reference": "Service de support",
+        "targetId": "service-de-support",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-regulation",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-regulation",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-regulation",
+        "reference": "Service de support",
+        "targetId": "service-de-support",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-culturel",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-culturel",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-culturel",
+        "reference": "Service de support",
+        "targetId": "service-de-support",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-support",
+        "reference": "Service de régulation",
+        "targetId": "service-de-regulation",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-support",
+        "reference": "Service d’approvisionnement",
+        "targetId": "service-dapprovisionnement",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      },
+      {
+        "id": "service-de-support",
+        "reference": "Service culturel",
+        "targetId": "service-culturel",
+        "status": "valid",
+        "missing": false,
+        "duplicate": false,
+        "synonym": false,
+        "reason": ""
+      }
+    ],
+    "equivalences": [
+      {
+        "ids": [
+          "biocenose",
+          "communaute"
+        ],
+        "reason": "La banque indique explicitement la proximité des deux termes."
+      },
+      {
+        "ids": [
+          "predation",
+          "herbivorie"
+        ],
+        "reason": "Le cours présente herbivorie comme prédation au sens large."
+      },
+      {
+        "ids": [
+          "parasitisme",
+          "symbiose"
+        ],
+        "reason": "Acception large de symbiose explicitement signalée dans le cours."
+      },
+      {
+        "ids": [
+          "mutualisme",
+          "symbiose"
+        ],
+        "reason": "La banque indique plusieurs acceptions de symbiose."
+      },
+      {
+        "ids": [
+          "producteur-primaire",
+          "autotrophe"
+        ],
+        "reason": "Définitions presque équivalentes dans cette banque."
+      },
+      {
+        "ids": [
+          "consommateur",
+          "heterotrophe"
+        ],
+        "reason": "Définitions largement recouvrantes dans le cours."
+      },
+      {
+        "ids": [
+          "procaryote",
+          "bacterie"
+        ],
+        "reason": "Le cours définit une bactérie comme un procaryote."
+      },
+      {
+        "ids": [
+          "bacterie",
+          "cyanobacterie"
+        ],
+        "reason": "Le cours définit la cyanobactérie comme une bactérie."
+      },
+      {
+        "ids": [
+          "plaste",
+          "chloroplaste"
+        ],
+        "reason": "Le cours définit le chloroplaste comme un type de plaste."
+      },
+      {
+        "ids": [
+          "endosymbiose",
+          "symbiose"
+        ],
+        "reason": "Relation explicitement générale/spécifique."
+      },
+      {
+        "ids": [
+          "cormophyte",
+          "tracheophyte"
+        ],
+        "reason": "Le sens de cormophyte varie selon les cours."
+      },
+      {
+        "ids": [
+          "cormophyte",
+          "bryophyte"
+        ],
+        "reason": "Le sens de cormophyte varie selon les cours."
+      },
+      {
+        "ids": [
+          "braun-blanquet",
+          "abondance-dominance"
+        ],
+        "reason": "Le nom désigne aussi une échelle dans la banque."
+      },
+      {
+        "ids": [
+          "suivi",
+          "suivi-ecologique"
+        ],
+        "reason": "Terme ou variante officielle partagé"
+      },
+      {
+        "ids": [
+          "odonate",
+          "anisoptere"
+        ],
+        "reason": "Relation de catégorie générale à sous-groupe."
+      },
+      {
+        "ids": [
+          "odonate",
+          "zygoptere"
+        ],
+        "reason": "Relation de catégorie générale à sous-groupe."
+      }
+    ]
+  }
+}
