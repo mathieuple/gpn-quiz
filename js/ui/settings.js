@@ -13,7 +13,7 @@ export function settings(root,ctx) {
     <section class="card stack"><h2>Pseudo du classement</h2><p class="muted small">Ton pseudo accompagne uniquement ton meilleur combo.</p><form id="display-name-form" class="stack"><label class="field">Pseudo<input id="display-name" type="text" minlength="2" maxlength="30" autocomplete="nickname" required></label><button class="button" type="submit">Enregistrer le pseudo</button><p id="display-name-status" class="small" role="status"></p></form></section>
     <section class="card stack"><h2>Ton carnet, sur cet appareil</h2>
       <p class="muted small">Ta progression reste dans ce navigateur. Exporte une copie pour la conserver ou changer d’appareil.</p>
-      <button id="export" class="button">↓ Exporter ma progression</button>
+      <button id="export" class="button"><i class="ph ph-download-simple" aria-hidden="true"></i> Exporter ma progression</button>
       <label class="field">Importer une sauvegarde JSON<input id="import" type="file" accept=".json,application/json"></label>
       <p id="import-status" class="small" role="status"></p><div class="divider"></div>
       <button id="reset" class="button danger">Réinitialiser ma progression</button>

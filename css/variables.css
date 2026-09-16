@@ -26,6 +26,11 @@
   --radius-md: 14px;
   --radius-lg: 22px;
   --shadow-sm: 0 3px 14px rgb(33 59 43 / 7%);
+  --motion-fast: 120ms;
+  --motion-normal: 200ms;
+  --motion-slow: 320ms;
+  --ease-standard: cubic-bezier(.2, .8, .2, 1);
+  --ease-emphasized: cubic-bezier(.2, 0, 0, 1);
   --bg: var(--color-bg);
   --surface: var(--color-surface);
   --text: var(--color-text);

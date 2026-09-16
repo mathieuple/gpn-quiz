@@ -21,6 +21,7 @@ export function validateCourses(packs,definitions,report=console.warn) {
     if(!text(course?.titre))fail(id,'Titre manquant.');
     if(!Number.isInteger(course?.ordre)||course.ordre<0)fail(id,'Ordre invalide.');
     if(!Number.isInteger(course?.version)||course.version<1)fail(id,'Version invalide.');
+    if(course?.examCount!==undefined&&(!Number.isInteger(course.examCount)||course.examCount<1))fail(id,'Nombre de questions d’examen invalide.');
     if(!Array.isArray(course?.sections)||!course.sections.length)fail(id,'Au moins une section est requise.');
     if(!Array.isArray(course?.notions))fail(id,'La liste notions est requise.');
     const courseNotions=new Set(Array.isArray(course?.notions)?course.notions:[]);

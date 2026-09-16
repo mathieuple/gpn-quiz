@@ -18,6 +18,17 @@ export const confusionGroups = [
   ['gametophyte', 'sporophyte'],
   ['gametange', 'sporange'],
   ['archegone', 'antheridie'],
+  ['proton', 'neutron', 'electron'],
+  ['cation', 'anion'],
+  ['adn', 'arn'],
+  ['homozygote', 'heterozygote'],
+  ['diploide', 'haploide'],
+  ['chromatine', 'chromatide'],
+  ['mitose', 'meiose'],
+  ['transcription', 'traduction'],
+  ['brassage-intra-chromosomique', 'brassage-inter-chromosomique'],
+  ['homologie', 'analogie'],
+  ['selection-naturelle', 'derive-genetique'],
 ];
 
 // Exclusions conservatrices fondées uniquement sur les définitions du cours.

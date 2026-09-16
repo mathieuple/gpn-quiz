@@ -1,0 +1,24 @@
+/* @phosphor-icons/web 2.1.2 — Regular subset used by GPN Quiz. */
+@font-face {
+  font-family: "Phosphor";
+  src: url("./Phosphor.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.ph { font-family: "Phosphor" !important; speak: never; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.ph-arrow-left::before { content: "\e058"; }
+.ph-arrow-right::before { content: "\e06c"; }
+.ph-arrow-up-right::before { content: "\e092"; }
+.ph-book-open-text::before { content: "\e8f2"; }
+.ph-chart-line-up::before { content: "\e156"; }
+.ph-download-simple::before { content: "\e20c"; }
+.ph-gear::before { content: "\e270"; }
+.ph-heart::before { content: "\e2a8"; }
+.ph-house::before { content: "\e2c2"; }
+.ph-list-checks::before { content: "\eadc"; }
+.ph-notebook::before { content: "\e34e"; }
+.ph-pencil-simple-line::before { content: "\ebc6"; }
+.ph-shuffle::before { content: "\e422"; }
+.ph-sparkle::before { content: "\e6a2"; }
+.ph-timer::before { content: "\e492"; }

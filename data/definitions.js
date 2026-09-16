@@ -1,3 +1,5 @@
+import {biologieFondamentaleDefinitions} from './biologie-fondamentale-definitions.js';
+
 // Banque de définitions — GPN Quiz V1
 // Générée pour être importée directement dans une application web.
 
@@ -2226,5 +2228,6 @@ export const definitions = [
     "variantesAcceptees": ["embryophyte", "embryophytes", "Archégoniate", "Archégoniates", "archégoniate", "archégoniates", "archegoniate", "archegoniates", "plante terrestre", "plantes terrestres"],
     "difficulte": 3,
     "distracteursProches": ["Cormophyte", "Thallophyte", "Trachéophyte"]
-  }
+  },
+  ...biologieFondamentaleDefinitions
 ];
