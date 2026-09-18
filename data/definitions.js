@@ -1,4 +1,5 @@
 import {biologieFondamentaleDefinitions} from './biologie-fondamentale-definitions.js';
+import {expressionGestionDocumentaireDefinitions} from './expression-gestion-documentaire-definitions.js';
 
 // Banque de définitions — GPN Quiz V1
 // Générée pour être importée directement dans une application web.
@@ -2229,5 +2230,6 @@ export const definitions = [
     "difficulte": 3,
     "distracteursProches": ["Cormophyte", "Thallophyte", "Trachéophyte"]
   },
-  ...biologieFondamentaleDefinitions
+  ...biologieFondamentaleDefinitions,
+  ...expressionGestionDocumentaireDefinitions
 ];

@@ -12,6 +12,10 @@
 .event-card h2 { position: relative; z-index: 1; max-width: 24ch; font-size: clamp(1.55rem,5vw,2rem); line-height: 1.12; }
 .event-card p { position: relative; z-index: 1; max-width: 56ch; margin-top: var(--space-2); color: #f7dcc1; }
 .event-card .event-button { position: relative; z-index: 1; min-height: 54px; border-color: #ffe0b6; background: #ffe0b6; color: #51250f; font-weight: 850; }
+.event-card-documentary { border-color: #69a8b7; background: linear-gradient(135deg,#174c58,#247080); box-shadow: 0 18px 42px rgb(5 40 48 / .24); }
+.event-card-documentary .event-subject { color: #bfe9ef; }
+.event-card-documentary p { color: #d2eef2; }
+.event-card-documentary .event-button { border-color: #d9f4f5; background: #d9f4f5; color: #123e47; }
 .learning-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
 .learning-link { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: var(--space-3); min-height: 68px; padding: var(--space-3) var(--space-4); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-decoration: none; }
 .learning-link-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: var(--radius-sm); background: var(--soft); color: var(--primary); font-size: 1.05rem; }

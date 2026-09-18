@@ -84,8 +84,8 @@ test('Biologie fondamentale : tolérance orthographique sans confusion biologiqu
 test('Biologie fondamentale : carte Event visible et reliée au quiz du cours',()=>{
   const home=readFileSync(new URL('../js/ui/home.js',import.meta.url),'utf8'),styles=readFileSync(new URL('../css/screens.css',import.meta.url),'utf8');
   assert.match(home,/EVENT_COURSE_ID='biologie-fondamentale-constituants-genetique-evolution-phylogenie'/);
-  assert.match(home,/id="event-start"/);
-  assert.match(home,/ctx\.start\(courseQuizOptions\(eventCourse\)\)/);
+  assert.match(home,/data-event-course/);
+  assert.match(home,/ctx\.start\(courseQuizOptions\(ctx\.courseIndex\.getCourseById\(button\.dataset\.eventCourse\)\)\)/);
   assert.match(styles,/\.event-card \{/);
   assert.match(styles,/\.event-card \.event-button/);
 });

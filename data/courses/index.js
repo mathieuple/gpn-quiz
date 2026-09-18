@@ -4,8 +4,9 @@ import {odonatesDemo} from './expertise-faunistique/odonates-demo.js';
 import {questCeQueLeGenieEcologique} from './genie-ecologique/quest-ce-que-le-genie-ecologique.js';
 import {presentationGenerale} from './biologie-vegetale/presentation-generale.js';
 import {biologieFondamentaleChapitre1} from './biologie-fondamentale/constituants-genetique-evolution-phylogenie.js';
+import {lexiqueExpressionGestionDocumentaire} from './expression-gestion-documentaire/lexique.js';
 
-export const coursePacks=[odonatesDemo,questCeQueLeGenieEcologique,presentationGenerale,biologieFondamentaleChapitre1];
+export const coursePacks=[odonatesDemo,questCeQueLeGenieEcologique,presentationGenerale,biologieFondamentaleChapitre1,lexiqueExpressionGestionDocumentaire];
 
 export function createCourseIndex(packs,bank,report=console.warn) {
   const validation=validateCourses(packs,bank,report),courses=[...validation.courses].sort((a,b)=>a.matiere.localeCompare(b.matiere,'fr')||a.ordre-b.ordre||a.titre.localeCompare(b.titre,'fr'));

@@ -7,15 +7,19 @@ import {renderLeaderboardPreview} from '../leaderboard/leaderboard-ui.js';
 
 const modes=[['mixed','ph-shuffle','Mixte'],['qcm','ph-list-checks','QCM'],['text','ph-pencil-simple-line','Saisie libre'],['exam','ph-timer','Examen'],['survival','ph-heart','Survie']];
 const EVENT_COURSE_ID='biologie-fondamentale-constituants-genetique-evolution-phylogenie';
+const EVENT_COURSES=[
+  {courseId:EVENT_COURSE_ID,subject:'BIOLOGIE FONDAMENTALE',title:'Constituants du vivant, génétique, évolution et phylogénie',summary:course=>`Un parcours spécial de ${course.questions.length} questions sur les 20 chapitres du cours.`,button:'Lancer l’event',className:''},
+  {courseId:'lexique-expression-gestion-documentaire',subject:'EXPRESSION ET GESTION DOCUMENTAIRE',title:'Lexique — Expression et gestion documentaire',summary:course=>`${course.notions.length} définitions à apprendre et à réviser.`,button:'Réviser le lexique',className:' event-card-documentary'}
+];
 
 export function home(root,ctx) {
-  const s=statistics(ctx.bank,ctx.user),subjects=[...new Set(ctx.bank.map(d=>d.matiere))],courses=ctx.courseIndex.getAllCourses(),eventCourse=ctx.courseIndex.getCourseById(EVENT_COURSE_ID),due=getDueNotions(ctx.bank,ctx.user);
+  const s=statistics(ctx.bank,ctx.user),subjects=[...new Set(ctx.bank.map(d=>d.matiere))],courses=ctx.courseIndex.getAllCourses(),events=EVENT_COURSES.map(config=>({...config,course:ctx.courseIndex.getCourseById(config.courseId)})).filter(event=>event.course),due=getDueNotions(ctx.bank,ctx.user);
   const daily=due.length?`<section class="card daily-card"><div><p class="eyebrow">RÉVISIONS DU JOUR</p><h2>${due.length} notion${due.length>1?'s':''} à revoir</h2><p class="muted small">≈ ${Math.max(1,Math.ceil(Math.min(20,due.length)/3))} min${due.length>20?' · Les 20 prioritaires pour commencer':''}</p></div><button id="daily-start" class="button primary wide">Commencer</button></section>`:'<p class="daily-clear"><i class="ph ph-list-checks" aria-hidden="true"></i> Tu es à jour pour aujourd’hui.</p>';
-  const event=eventCourse?`<section class="event-card" aria-labelledby="event-title"><div class="event-card-top"><span class="event-badge"><i class="ph ph-sparkle" aria-hidden="true"></i> EVENT</span><span class="event-subject">BIOLOGIE FONDAMENTALE</span></div><div><h2 id="event-title">Constituants du vivant, génétique, évolution et phylogénie</h2><p>Un parcours spécial de ${eventCourse.questions.length} questions sur les 20 chapitres du cours.</p></div><button id="event-start" class="button event-button wide" type="button">Lancer l’event <i class="ph ph-arrow-right" aria-hidden="true"></i></button></section>`:'';
+  const eventCards=events.map(event=>`<section class="event-card${event.className}" aria-labelledby="event-title-${e(event.courseId)}"><div class="event-card-top"><span class="event-badge"><i class="ph ph-sparkle" aria-hidden="true"></i> EVENT</span><span class="event-subject">${e(event.subject)}</span></div><div><h2 id="event-title-${e(event.courseId)}">${e(event.title)}</h2><p>${e(event.summary(event.course))}</p></div><button class="button event-button wide" type="button" data-event-course="${e(event.courseId)}">${e(event.button)} <i class="ph ph-arrow-right" aria-hidden="true"></i></button></section>`).join('');
   root.innerHTML=`<div class="stack">
     <section class="welcome"><p class="eyebrow">TON TERRAIN D’APPRENTISSAGE</p><h1>Un peu de révision.<br>Beaucoup de nature.</h1><p class="muted">Cours. Définitions. Quiz.</p></section>
     <section class="home-priority" aria-label="À faire maintenant">${daily}</section>
-    ${event}
+    ${eventCards}
     <nav class="learning-links" aria-label="Apprendre et consulter">
       <a class="learning-link" href="#/courses"><span class="learning-link-icon" aria-hidden="true"><i class="ph ph-book-open-text"></i></span><span><strong>Cours</strong><small>Lire et comprendre</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></a>
       <a class="learning-link" href="#/notions"><span class="learning-link-icon" aria-hidden="true"><i class="ph ph-notebook"></i></span><span><strong>Notions</strong><small>Consulter les définitions</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></a>
@@ -33,7 +37,7 @@ export function home(root,ctx) {
     <section class="card leaderboard-card"><div class="section-title"><h2>🏆 Meilleurs combos</h2><a id="leaderboard-link" href="#/progress">Voir le classement <i class="ph ph-arrow-right" aria-hidden="true"></i></a></div><div id="leaderboard-preview" aria-live="polite"></div></section>
   </div>`;
   root.querySelector('#daily-start')?.addEventListener('click',()=>ctx.start(dailyPreset(ctx.bank,ctx.user)));
-  root.querySelector('#event-start')?.addEventListener('click',()=>ctx.start(courseQuizOptions(eventCourse)));
+  root.querySelectorAll('[data-event-course]').forEach(button=>button.addEventListener('click',()=>ctx.start(courseQuizOptions(ctx.courseIndex.getCourseById(button.dataset.eventCourse)))));
   const form=root.querySelector('form');
   form.onchange=event=>{
     if(event.target.name==='mode'&&event.target.value==='exam')form.querySelector('[name=count][value="20"]').checked=true;
