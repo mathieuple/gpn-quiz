@@ -52,3 +52,11 @@ export const ambiguousPairs = [
   ['symbiose', 'endosymbiose', 'Relation explicitement générale/spécifique.'],
 ];
 export const inConfusionGroup = (a,b) => confusionGroups.some(group => group.includes(a) && group.includes(b));
+export function mergeConfusionGroups(groups=[]) {
+  const keys=new Set(confusionGroups.map(group=>[...group].sort().join('|')));
+  for(const group of groups) {
+    const key=Array.isArray(group)?[...group].sort().join('|'):'';
+    if(key&&!keys.has(key)){keys.add(key);confusionGroups.push([...group]);}
+  }
+  return confusionGroups;
+}

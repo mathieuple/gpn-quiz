@@ -9,7 +9,7 @@ function dimensions(stats) {
 }
 
 export function progression(root,ctx) {
-  const s=statistics(ctx.bank,ctx.user),subjects=[...new Set(ctx.bank.map(d=>d.matiere))];
+  const s=statistics(ctx.bank,ctx.user),subjects=ctx.courseIndex.getRegisteredSubjects().map(subject=>subject.name).filter(name=>ctx.bank.some(d=>d.matiere===name));
   const weak=ctx.bank.filter(d=>ctx.user.notions[d.id]?.timesSeen>0).sort((a,b)=>ctx.user.notions[a.id].recallMastery-ctx.user.notions[b.id].recallMastery).slice(0,10);
   const confusions=topConfusions(ctx.bank,ctx.user);
   root.innerHTML=`<div class="stack">

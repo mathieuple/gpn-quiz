@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "subjects": [
+    { "id": "biologie-fondamentale", "name": "Biologie fondamentale", "order": 1 },
+    { "id": "biologie-vegetale", "name": "Biologie végétale", "order": 2 },
+    { "id": "ecologie-generale", "name": "Écologie générale", "order": 3 },
+    { "id": "expertise-faunistique", "name": "Expertise faunistique", "order": 4 },
+    { "id": "expertise-floristique", "name": "Expertise floristique", "order": 5 },
+    { "id": "expression-gestion-documentaire", "name": "Expression et gestion documentaire", "order": 6 },
+    { "id": "genie-ecologique", "name": "Génie écologique", "order": 7 }
+  ]
+}

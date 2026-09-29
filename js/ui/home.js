@@ -6,14 +6,14 @@ import {courseQuizOptions} from '../courses/course-session.js';
 import {renderLeaderboardPreview} from '../leaderboard/leaderboard-ui.js';
 
 const modes=[['mixed','ph-shuffle','Mixte'],['qcm','ph-list-checks','QCM'],['text','ph-pencil-simple-line','Saisie libre'],['exam','ph-timer','Examen'],['survival','ph-heart','Survie']];
-const EVENT_COURSE_ID='biologie-fondamentale-constituants-genetique-evolution-phylogenie';
+const EVENT_COURSE_ID='ecologie-generale-ecologie-biosphere';
 const EVENT_COURSES=[
-  {courseId:EVENT_COURSE_ID,subject:'BIOLOGIE FONDAMENTALE',title:'Constituants du vivant, génétique, évolution et phylogénie',summary:course=>`Un parcours spécial de ${course.questions.length} questions sur les 20 chapitres du cours.`,button:'Lancer l’event',className:''},
+  {courseId:EVENT_COURSE_ID,subject:'ÉCOLOGIE GÉNÉRALE',title:'L’écologie et la biosphère',summary:course=>`Un parcours spécial de ${course.questions.length} questions sur les ${course.sections.length} sections du cours.`,button:'Lancer l’event',className:''},
   {courseId:'lexique-expression-gestion-documentaire',subject:'EXPRESSION ET GESTION DOCUMENTAIRE',title:'Lexique — Expression et gestion documentaire',summary:course=>`${course.notions.length} définitions à apprendre et à réviser.`,button:'Réviser le lexique',className:' event-card-documentary'}
 ];
 
 export function home(root,ctx) {
-  const s=statistics(ctx.bank,ctx.user),subjects=[...new Set(ctx.bank.map(d=>d.matiere))],courses=ctx.courseIndex.getAllCourses(),events=EVENT_COURSES.map(config=>({...config,course:ctx.courseIndex.getCourseById(config.courseId)})).filter(event=>event.course),due=getDueNotions(ctx.bank,ctx.user);
+  const s=statistics(ctx.bank,ctx.user),subjects=ctx.courseIndex.getRegisteredSubjects().map(subject=>subject.name).filter(name=>ctx.bank.some(d=>d.matiere===name)),courses=ctx.courseIndex.getAllCourses(),events=EVENT_COURSES.map(config=>({...config,course:ctx.courseIndex.getCourseById(config.courseId)})).filter(event=>event.course),due=getDueNotions(ctx.bank,ctx.user);
   const daily=due.length?`<section class="card daily-card"><div><p class="eyebrow">RÉVISIONS DU JOUR</p><h2>${due.length} notion${due.length>1?'s':''} à revoir</h2><p class="muted small">≈ ${Math.max(1,Math.ceil(Math.min(20,due.length)/3))} min${due.length>20?' · Les 20 prioritaires pour commencer':''}</p></div><button id="daily-start" class="button primary wide">Commencer</button></section>`:'<p class="daily-clear"><i class="ph ph-list-checks" aria-hidden="true"></i> Tu es à jour pour aujourd’hui.</p>';
   const eventCards=events.map(event=>`<section class="event-card${event.className}" aria-labelledby="event-title-${e(event.courseId)}"><div class="event-card-top"><span class="event-badge"><i class="ph ph-sparkle" aria-hidden="true"></i> EVENT</span><span class="event-subject">${e(event.subject)}</span></div><div><h2 id="event-title-${e(event.courseId)}">${e(event.title)}</h2><p>${e(event.summary(event.course))}</p></div><button class="button event-button wide" type="button" data-event-course="${e(event.courseId)}">${e(event.button)} <i class="ph ph-arrow-right" aria-hidden="true"></i></button></section>`).join('');
   root.innerHTML=`<div class="stack">

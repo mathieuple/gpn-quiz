@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "courses": [
+    "courses/biologie-vegetale-presentation-generale.json",
+    "courses/genie-ecologique-definition-et-principes.json",
+    "courses/ecologie-generale-ecologie-biosphere.json"
+  ]
+}

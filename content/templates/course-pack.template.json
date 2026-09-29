@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "course": {
+    "id": "matiere-titre-du-cours",
+    "subjectId": "example-subject",
+    "title": "TITRE_DU_COURS",
+    "order": 1,
+    "version": 1,
+    "sections": [
+      {
+        "id": "introduction",
+        "titre": "INTRODUCTION",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "TEXTE_ISSU_DE_LA_SOURCE"
+          },
+          {
+            "type": "definition",
+            "notionId": "ID_NOTION_EXISTANTE"
+          }
+        ],
+        "notions": [
+          "ID_NOTION_EXISTANTE"
+        ]
+      },
+      {
+        "id": "suite",
+        "titre": "DEUXIEME_SECTION",
+        "contenu": [
+          {
+            "type": "important",
+            "text": "POINT_IMPORTANT_ISSU_DE_LA_SOURCE"
+          }
+        ],
+        "notions": [
+          "ID_NOUVELLE_NOTION"
+        ]
+      }
+    ]
+  },
+  "definitionRefs": [
+    "ID_NOTION_EXISTANTE"
+  ],
+  "definitionsToCreate": [
+    {
+      "id": "ID_NOUVELLE_NOTION",
+      "terme": "TERME",
+      "definitionCourte": "DEFINITION_ISSUE_DE_LA_SOURCE",
+      "explication": "",
+      "theme": "THEME",
+      "variantesAcceptees": [],
+      "difficulte": 1,
+      "distracteursProches": []
+    }
+  ],
+  "questions": [
+    {
+      "id": "matiere-cours-q001",
+      "sectionId": "introduction",
+      "type": "qcm",
+      "question": "QUESTION_QCM",
+      "answer": "REPONSE_A",
+      "choices": [
+        "REPONSE_A",
+        "REPONSE_B",
+        "REPONSE_C",
+        "REPONSE_D"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "matiere-cours-q002",
+      "sectionId": "suite",
+      "type": "short-answer",
+      "question": "QUESTION_COURTE",
+      "answer": "REPONSE_ATTENDUE",
+      "acceptedAnswers": [],
+      "difficulty": 1
+    }
+  ],
+  "confusionGroups": [
+    [
+      "ID_NOTION_EXISTANTE",
+      "ID_NOUVELLE_NOTION"
+    ]
+  ]
+}

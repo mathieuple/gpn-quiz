@@ -18,8 +18,8 @@ test('déploiement statique à la racine : HTML, manifest et assets résolus',as
 
 test('service worker racine : précache relatif et vérification de mise à jour',async()=>{
   const source=await readFile(new URL('service-worker.js',root),'utf8'),files=JSON.parse(source.match(/const FILES=(\[[^;]+\]);/)[1]);
-  assert.match(source,/v1\.2-vercel-/);assert.match(source,/refresh/);assert.match(source,/cached\|\|refresh/);
-  assert.ok(files.includes('data/courses/index.js'));assert.ok(files.every(path=>!path.startsWith('/')));
+  assert.match(source,/v1\.2-ecologie-biosphere-/);assert.match(source,/refresh/);assert.match(source,/cached\|\|refresh/);
+  assert.ok(files.includes('data/courses/index.js'));assert.ok(files.includes('content/manifest.json'));assert.ok(files.includes('content/subjects.json'));assert.ok(files.includes('data/content-packs/loader.js'));assert.ok(files.every(path=>!path.startsWith('/')));
   for(const path of files)await readFile(new URL(path,root));
   const app=await readFile(new URL('js/app.js',root),'utf8');assert.match(app,/updateViaCache:'none'/);
 });

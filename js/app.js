@@ -1,4 +1,3 @@
-import {definitions} from '../data/definitions.js';
 import {validateDefinitions} from '../data/validate.js';
 import {load,save} from './storage/storage.js';
 import {QuizSession} from './quiz/quiz-engine.js';
@@ -11,7 +10,7 @@ import {notions} from './ui/notions.js';
 import {progression} from './ui/progression.js';
 import {settings} from './ui/settings.js';
 import {coursesScreen,courseSubjectScreen,courseReader} from './ui/courses.js';
-import {courseIndex,courseValidation} from '../data/courses/index.js';
+import {contentDefinitions as definitions,courseIndex,courseValidation} from '../data/courses/index.js';
 import {LeaderboardService} from './leaderboard/leaderboard-service.js';
 import {hasValidLeaderboardProfile} from './leaderboard/leaderboard-state.js';
 import {profileIsRequired,showProfileGate} from './ui/profile-gate.js';

@@ -1,7 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {definitions} from '../data/definitions.js';
-import {coursePacks,createCourseIndex} from '../data/courses/index.js';
+import {contentDefinitions as definitions,coursePacks,createCourseIndex} from '../data/courses/index.js';
 import {validateCourses} from '../data/courses/validate.js';
 import {courseQuizOptions,courseQuestionStateId} from '../js/courses/course-session.js';
 import {QuizSession} from '../js/quiz/quiz-engine.js';

@@ -81,9 +81,11 @@ test('Biologie fondamentale : tolérance orthographique sans confusion biologiqu
   assert.equal(validateAnswer('brassage inter chromosomique',notion('brassage-intra-chromosomique'),definitions),'wrong');
 });
 
-test('Biologie fondamentale : carte Event visible et reliée au quiz du cours',()=>{
+test('Biologie fondamentale : cours conservé après remplacement de sa carte Event',()=>{
   const home=readFileSync(new URL('../js/ui/home.js',import.meta.url),'utf8'),styles=readFileSync(new URL('../css/screens.css',import.meta.url),'utf8');
-  assert.match(home,/EVENT_COURSE_ID='biologie-fondamentale-constituants-genetique-evolution-phylogenie'/);
+  assert.match(home,/EVENT_COURSE_ID='ecologie-generale-ecologie-biosphere'/);
+  assert.doesNotMatch(home,/EVENT_COURSE_ID='biologie-fondamentale-constituants-genetique-evolution-phylogenie'/);
+  assert.equal(courseIndex.getCourseById(course.id),course);
   assert.match(home,/data-event-course/);
   assert.match(home,/ctx\.start\(courseQuizOptions\(ctx\.courseIndex\.getCourseById\(button\.dataset\.eventCourse\)\)\)/);
   assert.match(styles,/\.event-card \{/);

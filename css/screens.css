@@ -70,6 +70,8 @@
 .feedback-answer { display: grid; gap: var(--space-1); margin-top: var(--space-4); }
 .feedback h3 { color: var(--text); font-size: 1.18rem; }
 .feedback-explanation { margin-top: var(--space-3); color: var(--muted); font-size: .92rem; line-height: 1.6; }
+.feedback-example, .definition-example { display: grid; gap: var(--space-1); margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--line); font-size: .92rem; line-height: 1.6; overflow-wrap: anywhere; }
+.feedback-example .eyebrow, .definition-example .eyebrow { color: var(--muted); }
 .feedback-return { margin-top: var(--space-3); }
 .feedback p + p { margin-top: var(--space-2); }
 .feedback .confusion { margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--line); font-size: .9rem; }
@@ -121,7 +123,9 @@ body[data-route="/play"] .shell { min-height: 100dvh; }
 .course-subject-card small, .course-row small { display: block; color: var(--muted); font-weight: 400; }
 .course-order { align-self: flex-start; color: var(--primary); font-weight: 750; font-variant-numeric: tabular-nums; }
 .back-link { display: inline-flex; align-items: center; min-height: 44px; width: max-content; color: var(--primary); font-size: .9rem; font-weight: 650; text-decoration: none; }
-.course-article { display: grid; gap: var(--space-7); max-width: 680px; margin: 0 auto; }
+.course-article { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-7); width: 100%; min-width: 0; max-width: 680px; margin: 0 auto; }
+.course-article > *, .course-content > *, .course-definition > *, .course-notions > *, .course-notion-links > * { min-width: 0; max-width: 100%; }
+.course-article h3, .course-notion-links a { overflow-wrap: anywhere; }
 .course-article > header { display: grid; gap: var(--space-3); padding-bottom: var(--space-2); }
 .course-article > section { display: grid; gap: var(--space-4); scroll-margin-top: var(--space-5); }
 .course-article h1 { max-width: 18ch; font-size: clamp(2.1rem, 8vw, 3.2rem); }

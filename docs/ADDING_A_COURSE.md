@@ -1,67 +1,67 @@
 # Ajouter un cours à GPN Quiz
 
-Les cours sont des données statiques. Aucun étudiant ne peut créer, importer ou modifier un contenu depuis l’application.
+Un cours est désormais un fichier JSON statique. Aucun étudiant ne peut importer ou modifier du contenu depuis l’application.
 
-## Workflow
+## Procédure
+
+1. Copier `content/templates/course-pack.template.json` vers `content/courses/nom-du-cours.json`.
+2. Choisir un `course.id` stable, unique, en minuscules et tirets.
+3. Réutiliser le `subjectId` de la matière déclaré dans `content/subjects.json`.
+4. Définir `course.title`, `course.order`, puis reproduire le cours source dans `course.sections`. Chaque section possède un `id` stable et unique dans le cours.
+5. Placer dans `definitionRefs` les IDs des notions déjà présentes. Ne pas recopier leur définition.
+6. Placer dans `definitionsToCreate` uniquement les notions réellement absentes, avec le schéma complet de la banque actuelle.
+7. Ajouter les questions préparées dans `questions`. Types admis : `qcm`, `short-answer`, `definition-term`.
+8. Ajouter dans `confusionGroups` uniquement des groupes dont tous les IDs existent dans la banque agrégée.
+9. Ajouter le chemin relatif du JSON à `content/manifest.json`.
+10. Exécuter `npm run validate:content`.
+11. Exécuter `npm test`.
+12. Exécuter `git add .`, créer le commit, puis pousser sur GitHub.
+
+Le nouveau cours apparaît automatiquement dans Cours, dans les relations cours ↔ notions et dans les sessions « Réviser ce cours ». Aucun fichier JavaScript ne doit être modifié. Le manifest est récupéré en priorité sur le réseau ; chaque pack consulté est ensuite conservé par la PWA pour le mode hors ligne.
+
+## Cas A — Nouveau chapitre d’une matière existante
+
+1. Reprendre l’`id` de la matière dans `content/subjects.json` comme `course.subjectId`.
+2. Choisir un nouveau `course.id`, un `course.title` et un `course.order` dans cette matière.
+3. Ajouter le nouveau JSON à `content/manifest.json`, puis valider.
+
+## Cas B — Nouvelle matière
+
+1. Ajouter une seule entrée `{ "id", "name", "order" }` à `content/subjects.json`.
+2. Utiliser cet `id` comme `course.subjectId` dans le premier Content Pack.
+3. Ajouter le nouveau JSON à `content/manifest.json`.
+4. Lancer la validation et les tests.
+
+## Règles d’IDs
+
+- `course.id` : unique dans toute l’application et immuable après publication.
+- `course.subjectId` : ID exact et stable déclaré dans `content/subjects.json`.
+- `section.id` : unique dans son cours.
+- `question.id` : unique dans toute l’application et immuable pour préserver la progression.
+- `definition.id` : réutiliser l’ID global existant dès que la notion existe déjà.
+
+Une définition déclarée dans `definitionsToCreate` avec un ID déjà présent n’écrase jamais la banque globale. Le validateur conserve l’existante et affiche un avertissement. Un pack invalide est ignoré ; les autres cours continuent de fonctionner.
+
+## Contenus autorisés
+
+Les blocs de section admis sont `paragraph`, `bullet-list`, `ordered-list`, `important`, `definition` et `table`. Un bloc `definition` référence uniquement un `notionId`.
+
+Un QCM possède exactement quatre choix uniques, dont un seul correspond à `answer`. Une question pointe vers une section réelle par `sectionId`.
+
+## Workflow de préparation
 
 ```text
-Cours source (PDF ou autre document)
+PDF ou PowerPoint
 ↓
-Codex extrait uniquement le contenu fourni
+préparation externe fidèle à la source
 ↓
-Course Pack JavaScript
+Content Pack JSON
 ↓
-validateCourses()
+npm run validate:content
 ↓
-tests V1.2 et tests existants
+npm test
 ↓
-publication statique / GitHub Pages
+commit et push
 ```
 
-1. Copier `data/courses/_template.js` dans le dossier de la matière.
-2. Choisir un `id` stable en minuscules et tirets. Les IDs de cours et de questions sont uniques dans toute l’application ; les IDs de sections sont uniques dans le cours.
-3. Reprendre exactement le nom de `matiere` présent dans `data/definitions.js`.
-4. Transformer le document source en sections courtes. Les seuls blocs admis sont `paragraph`, `bullet-list`, `ordered-list`, `important`, `definition` et `table`.
-5. Référencer les définitions par leur ID. Ne jamais recopier leur texte dans le Course Pack. Une notion utilisée dans `section.notions` doit aussi appartenir à `course.notions`.
-6. Écrire les questions à partir du document source. Types admis : `qcm`, `short-answer`, `definition-term`. Un QCM contient exactement 4 choix uniques, dont la réponse attendue.
-7. Importer le nouveau pack dans `data/courses/index.js` et l’ajouter à `coursePacks`. L’interface, les relations et les pages sont ensuite produites automatiquement.
-8. Ajouter le fichier du pack à `FILES` dans `service-worker.js`, puis modifier `VERSION`. Cela publie sa nouvelle copie et conserve la lecture hors ligne.
-9. Exécuter `node --test tests/*.test.js`. Toute référence cassée doit être corrigée avant publication.
-
-Un pack invalide est écarté sans bloquer les autres cours. `validateCourses()` écrit des messages explicites dans la console développeur et renvoie aussi la liste `errors`.
-
-## Prompt court pour Codex
-
-```text
-Analyse le cours fourni et ajoute-le à GPN Quiz avec le format Course Pack existant. Le document fourni est l’unique source pédagogique de référence : respecte son vocabulaire, son ordre et ses limites, sans combler ses lacunes par des connaissances externes sauf demande explicite. Réutilise une définition existante uniquement si elle correspond exactement ; crée seulement les nouvelles définitions indispensables. Écris des questions courtes, fidèles au document et sans ambiguïté. Signale séparément chaque incohérence ou ambiguïté potentielle. Enregistre le pack dans la matière appropriée, ajoute-le à l’index et au cache PWA, incrémente la version du service worker, exécute validateCourses() puis tous les tests avant livraison.
-```
-
-## Structure minimale
-
-```js
-{
-  id: 'expertise-faunistique-odonates',
-  matiere: 'Expertise faunistique',
-  titre: 'Odonates',
-  ordre: 2,
-  version: 1,
-  sections: [{
-    id: 'generalites',
-    titre: 'Généralités',
-    contenu: [{type: 'paragraph', text: '...'}],
-    notions: ['odonate']
-  }],
-  notions: ['odonate'],
-  questions: [{
-    id: 'efa-odonates-q01',
-    sectionId: 'generalites',
-    type: 'short-answer',
-    question: '...',
-    answer: '...',
-    acceptedAnswers: [],
-    difficulty: 1
-  }]
-}
-```
-
-`section.notions` est facultatif. Il prépare une future commande « Réviser cette section » ; le moteur accepte déjà les filtres `courseId` et `sectionId`, sans ajouter ce bouton à la page de lecture.
+Consulter `docs/CONTENT_PACK_SCHEMA.md` pour la description complète du format.

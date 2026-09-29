@@ -1,0 +1,1370 @@
+{
+  "schemaVersion": 1,
+  "course": {
+    "id": "ecologie-generale-ecologie-biosphere",
+    "subjectId": "ecologie-generale",
+    "title": "L’écologie et la biosphère",
+    "order": 1,
+    "version": 1,
+    "sections": [
+      {
+        "id": "climat-macroclimat-microclimat",
+        "titre": "Climat, macroclimat et microclimat",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "Le climat est l’ensemble des conditions météorologiques à long terme propres à une région donnée. Il influe fortement sur la répartition des organismes sur terre et dans les océans."
+          },
+          {
+            "type": "bullet-list",
+            "items": [
+              "La température ;",
+              "Les précipitations ;",
+              "La lumière ;",
+              "Le vent."
+            ]
+          },
+          {
+            "type": "definition",
+            "notionId": "climat"
+          },
+          {
+            "type": "definition",
+            "notionId": "macroclimat"
+          },
+          {
+            "type": "definition",
+            "notionId": "microclimat"
+          },
+          {
+            "type": "paragraph",
+            "text": "Un habitat désigne le lieu où vit l’espèce, y compris ses dimensions biotiques. Un même biotope peut contenir plusieurs microhabitats lorsqu’il est hétérogène."
+          },
+          {
+            "type": "definition",
+            "notionId": "microhabitat"
+          }
+        ],
+        "notions": [
+          "climat",
+          "macroclimat",
+          "microclimat",
+          "habitat",
+          "microhabitat",
+          "facteur-abiotique",
+          "facteur-biotique"
+        ]
+      },
+      {
+        "id": "regimes-climatiques-planetaires",
+        "titre": "Les régimes climatiques à l’échelle planétaire",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "À l’échelle planétaire, les régimes climatiques sont en grande partie déterminés par l’apport d’énergie solaire et par les mouvements de la Terre dans l’espace. Les rayons solaires réchauffent l’atmosphère, le sol et l’eau."
+          },
+          {
+            "type": "paragraph",
+            "text": "Ce réchauffement détermine des différences de température, les mouvements cycliques de l’air et de l’eau et l’évaporation à l’origine de grandes variations du climat."
+          },
+          {
+            "type": "paragraph",
+            "text": "La forme ronde de la Terre fait varier l’intensité lumineuse avec la latitude : les rayons frappent plus directement les tropiques et atteignent plus obliquement les latitudes élevées, où l’énergie est plus diffuse."
+          },
+          {
+            "type": "important",
+            "text": "L’énergie solaire est à l’origine du cycle de l’eau, du vent et de la photosynthèse. L’ensemble de la vie sur Terre dépend de cette source énergétique."
+          }
+        ],
+        "notions": [
+          "climat",
+          "macroclimat"
+        ]
+      },
+      {
+        "id": "rayonnement-atmosphere-bilan",
+        "titre": "Rayonnement solaire, atmosphère et bilan radiatif",
+        "contenu": [
+          {
+            "type": "bullet-list",
+            "items": [
+              "Puissance émise par le Soleil : 63 500 kW/m² ;",
+              "Constante solaire : environ 1 360 W/m² ;",
+              "Une partie du rayonnement est réfléchie ;",
+              "Une partie est absorbée et diffusée ;",
+              "Le rayonnement solaire incident moyen à la surface de la Terre est d’environ 340 W/m²."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "L’atmosphère est divisée en plusieurs couches. La troposphère est le siège des phénomènes météorologiques. Les masses d’air se caractérisent notamment par la température, l’énergie solaire, la pression atmosphérique, le vent, l’humidité et la pluviométrie."
+          },
+          {
+            "type": "paragraph",
+            "text": "Au moins 35 % du rayonnement solaire intercepté par la Terre et son atmosphère est réfléchi vers l’espace. Une partie est diffusée par les molécules d’air, les aérosols et les poussières. La vapeur d’eau, le dioxyde de carbone et l’ozone absorbent 10 à 15 % du rayonnement solaire."
+          },
+          {
+            "type": "important",
+            "text": "Toute absorption d’un rayonnement réchauffe le corps qui l’absorbe. Tout corps échauffé émet un rayonnement dont la nature dépend de sa température."
+          }
+        ],
+        "notions": [
+          "climat",
+          "macroclimat"
+        ]
+      },
+      {
+        "id": "effet-serre",
+        "titre": "Effet de serre naturel et réchauffement climatique",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "L’effet de serre résulte de l’absorption, par des gaz de l’atmosphère, des infrarouges rayonnés par la surface terrestre. Il s’ensuit un échauffement additionnel et une émission d’infrarouges thermiques dans toutes les directions, notamment vers le bas."
+          },
+          {
+            "type": "paragraph",
+            "text": "L’effet de serre naturel est dû notamment à la vapeur d’eau, aux nuages et à des gaz atmosphériques comme le dioxyde de carbone (CO2), le méthane (CH4) et les NOx."
+          },
+          {
+            "type": "important",
+            "text": "L’émission massive de gaz à effet de serre liée aux activités humaines est à l’origine de l’intensification actuelle de l’effet de serre et du réchauffement de la basse atmosphère."
+          }
+        ],
+        "notions": [
+          "climat"
+        ]
+      },
+      {
+        "id": "circulation-facteurs-regionaux",
+        "titre": "Circulation atmosphérique et facteurs régionaux du climat",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "L’intense rayonnement solaire près de l’équateur déclenche un système de circulation verticale et horizontale des masses d’air et de précipitations autour du globe. Sous l’effet de la chaleur tropicale, l’eau s’évapore depuis la surface terrestre."
+          },
+          {
+            "type": "paragraph",
+            "text": "Les régimes climatiques sont aussi influencés par trois grands facteurs régionaux et locaux."
+          },
+          {
+            "type": "bullet-list",
+            "items": [
+              "Les variations saisonnières du climat ;",
+              "Les grandes étendues d’eau ;",
+              "Les chaînes de montagnes."
+            ]
+          }
+        ],
+        "notions": [
+          "climat",
+          "macroclimat"
+        ]
+      },
+      {
+        "id": "saisons-oceans-montagnes",
+        "titre": "Saisons, océans et montagnes",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "L’inclinaison de l’axe terrestre et la course annuelle de la Terre autour du Soleil entraînent des cycles saisonniers. Elles modifient la photopériode, le rayonnement solaire, la température et l’angle d’incidence des rayons au cours de l’année."
+          },
+          {
+            "type": "paragraph",
+            "text": "Les courants marins influencent le climat des côtes en réchauffant ou en refroidissant les masses d’air marin qui passent au-dessus des continents."
+          },
+          {
+            "type": "table",
+            "caption": "Courants cités dans le cours",
+            "headers": [
+              "Courant",
+              "Influence présentée"
+            ],
+            "rows": [
+              [
+                "Courant de Californie",
+                "Courant froid créant un climat frais et brumeux sur la côte ouest de l’Amérique du Nord."
+              ],
+              [
+                "Gulf Stream",
+                "Courant chaud qui tempère le climat de l’Europe occidentale et septentrionale."
+              ],
+              [
+                "Courant du Labrador",
+                "Courant froid qui descend du Groenland et refroidit le sud-est du Canada."
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Lorsqu’un air chaud et humide rencontre une montagne, il s’élève, refroidit et libère son humidité sur le versant exposé au vent. Sur le versant abrité, l’air plus sec descend et produit une région pauvre en précipitations."
+          },
+          {
+            "type": "important",
+            "text": "Dans l’hémisphère Nord, le versant sud reçoit plus de lumière solaire que le versant nord ; il est donc plus chaud et plus sec."
+          }
+        ],
+        "notions": [
+          "climat",
+          "macroclimat"
+        ]
+      },
+      {
+        "id": "microclimats-facteurs-locaux",
+        "titre": "Microclimats et facteurs abiotiques locaux",
+        "contenu": [
+          {
+            "type": "definition",
+            "notionId": "facteur-abiotique"
+          },
+          {
+            "type": "definition",
+            "notionId": "facteur-biotique"
+          },
+          {
+            "type": "paragraph",
+            "text": "Des différences locales de température, de lumière, d’eau et de nutriments influent sur la répartition des organismes. L’ombrage, l’évaporation de l’eau du sol et la configuration des vents modifient le microclimat."
+          },
+          {
+            "type": "paragraph",
+            "text": "Dans les forêts, les arbres tempèrent souvent le microclimat. Les terres basses sont habituellement plus humides que les terres hautes et peuvent accueillir des espèces d’arbres différentes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sous une bûche ou une grosse pierre, des organismes vivent à l’abri des extrêmes de température et d’humidité. Le cours cite également l’intervalle entre l’écorce d’un arbre et son tronc comme microhabitat."
+          }
+        ],
+        "notions": [
+          "microclimat",
+          "microhabitat",
+          "facteur-abiotique",
+          "facteur-biotique"
+        ]
+      },
+      {
+        "id": "changements-climatiques-repartition",
+        "titre": "Changements climatiques et répartition des espèces",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "La combustion de carburants fossiles et la déforestation accroissent la concentration de CO2 et d’autres gaz à effet de serre dans l’atmosphère. Le support indique un réchauffement moyen de 0,8 °C depuis 1900 et des scénarios de 1 à 6 °C supplémentaires d’ici 2100."
+          },
+          {
+            "type": "paragraph",
+            "text": "Dans l’étude citée, 22 des 35 espèces de papillons étudiées se sont déplacées de 35 à 240 km vers le nord au cours des périodes documentées, parfois depuis 1900."
+          },
+          {
+            "type": "paragraph",
+            "text": "Le cours cite aussi la colonisation récente de l’océan Atlantique par la diatomée du Pacifique Neodenticula seminae, pour la première fois depuis 800 000 ans."
+          },
+          {
+            "type": "important",
+            "text": "Le déplacement de nombreuses espèces sous l’effet des changements climatiques illustre l’importance du climat dans leur répartition."
+          }
+        ],
+        "notions": [
+          "climat",
+          "facteur-abiotique",
+          "facteur-biotique"
+        ]
+      },
+      {
+        "id": "biomes-climatogrammes",
+        "titre": "Biomes terrestres et climatogrammes",
+        "contenu": [
+          {
+            "type": "definition",
+            "notionId": "biome"
+          },
+          {
+            "type": "paragraph",
+            "text": "La répartition des biomes terrestres dépend de la latitude et donc du climat. Les biomes terrestres sont caractérisés par un type de végétation."
+          },
+          {
+            "type": "definition",
+            "notionId": "climatogramme"
+          },
+          {
+            "type": "paragraph",
+            "text": "Les moyennes annuelles ne suffisent pas toujours : l’alternance des saisons sèches et humides ainsi que les variations de température ont aussi de l’importance."
+          },
+          {
+            "type": "paragraph",
+            "text": "Le substrat rocheux influence la disponibilité des minéraux et la structure du sol, qui déterminent en partie la composition de la végétation."
+          }
+        ],
+        "notions": [
+          "biome",
+          "climatogramme",
+          "climat",
+          "facteur-abiotique"
+        ]
+      },
+      {
+        "id": "ecotones-stratification",
+        "titre": "Écotones et stratification des biomes terrestres",
+        "contenu": [
+          {
+            "type": "definition",
+            "notionId": "ecotone"
+          },
+          {
+            "type": "paragraph",
+            "text": "Les biomes s’interpénètrent généralement sans démarcation nette. Le cours cite la ripisylve, la zone intertidale et les lisières de forêt comme écotones à une échelle plus petite."
+          },
+          {
+            "type": "definition",
+            "notionId": "canopee"
+          },
+          {
+            "type": "ordered-list",
+            "items": [
+              "Canopée, ou strate arborescente supérieure ;",
+              "Strate arborescente inférieure ;",
+              "Strate arbustive ;",
+              "Strate herbacée ;",
+              "Litière ;",
+              "Strate racinaire."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Les prairies présentent aussi une stratification verticale, avec une strate herbacée dominante, une litière et une strate racinaire. Les animaux utilisent différentes strates selon leur régime alimentaire."
+          }
+        ],
+        "notions": [
+          "ecotone",
+          "canopee",
+          "biome"
+        ]
+      },
+      {
+        "id": "evolution-convergente-perturbations",
+        "titre": "Évolution convergente et perturbations",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "Le support illustre l’évolution convergente avec Euphorbia canariensis des îles Canaries et Cereus peruvianus d’Amérique du Sud."
+          },
+          {
+            "type": "paragraph",
+            "text": "Un biome est dynamique : la perturbation naturelle est la règle générale, et non la stabilité."
+          },
+          {
+            "type": "definition",
+            "notionId": "perturbation"
+          },
+          {
+            "type": "bullet-list",
+            "items": [
+              "Les incendies peuvent empêcher une savane de devenir un boisé ;",
+              "Les tempêtes et ouragans créent des ouvertures pour de nouvelles espèces ;",
+              "Les invasions d’insectes peuvent créer des clairières ;",
+              "Les activités humaines remplacent des biomes naturels par des espaces urbains ou agricoles."
+            ]
+          }
+        ],
+        "notions": [
+          "biome",
+          "perturbation"
+        ]
+      },
+      {
+        "id": "biomes-aquatiques",
+        "titre": "Biomes aquatiques",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "Les biomes aquatiques se caractérisent principalement par leurs milieux physiques et chimiques et présentent moins de variations latitudinales que les biomes terrestres."
+          },
+          {
+            "type": "table",
+            "caption": "Biomes dulcicoles et marins",
+            "headers": [
+              "Type",
+              "Concentration saline"
+            ],
+            "rows": [
+              [
+                "Biomes dulcicoles",
+                "Eau douce : moins de 0,1 %."
+              ],
+              [
+                "Biomes marins",
+                "Environ 3 % en moyenne."
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Les biomes dulcicoles sont liés aux sols et aux composantes biotiques des biomes terrestres voisins. Ils dépendent aussi de l’écoulement des eaux et du climat."
+          },
+          {
+            "type": "paragraph",
+            "text": "Selon le support, les océans recouvrent environ 75 % de la surface terrestre. Ils influencent les précipitations, le climat et les vents. Les algues marines et les bactéries photosynthétiques produisent une partie substantielle du dioxygène atmosphérique et consomment de grandes quantités de CO2."
+          }
+        ],
+        "notions": [
+          "biome",
+          "climat",
+          "facteur-abiotique",
+          "facteur-biotique"
+        ]
+      },
+      {
+        "id": "zonation-milieux-aquatiques",
+        "titre": "Zonation des milieux aquatiques",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "La répartition des communautés lacustres et marines dépend de la profondeur, de la pénétration de la lumière, de la distance à la rive ou au rivage et de la distinction entre l’eau libre et le fond."
+          },
+          {
+            "type": "paragraph",
+            "text": "Dans le milieu marin, le cours distingue les zones euphotique et aphotique, intertidale, néritique et océanique, pélagique, benthique et abyssale."
+          },
+          {
+            "type": "paragraph",
+            "text": "Dans le milieu lacustre, il distingue les zones euphotique et aphotique, littorale et limnétique, pélagique et benthique."
+          }
+        ],
+        "notions": [
+          "zone-euphotique",
+          "zone-aphotique",
+          "zone-pelagique",
+          "zone-abyssale",
+          "zone-benthique"
+        ]
+      },
+      {
+        "id": "stratification-verticale-thermique",
+        "titre": "Stratification verticale et thermique",
+        "contenu": [
+          {
+            "type": "definition",
+            "notionId": "zone-euphotique"
+          },
+          {
+            "type": "definition",
+            "notionId": "zone-aphotique"
+          },
+          {
+            "type": "definition",
+            "notionId": "zone-pelagique"
+          },
+          {
+            "type": "definition",
+            "notionId": "zone-abyssale"
+          },
+          {
+            "type": "definition",
+            "notionId": "zone-benthique"
+          },
+          {
+            "type": "definition",
+            "notionId": "benthos"
+          },
+          {
+            "type": "definition",
+            "notionId": "detritus"
+          },
+          {
+            "type": "paragraph",
+            "text": "L’eau superficielle est réchauffée par le rayonnement solaire jusqu’à la limite de pénétration de la lumière, tandis que l’eau profonde reste froide."
+          },
+          {
+            "type": "definition",
+            "notionId": "thermocline"
+          }
+        ],
+        "notions": [
+          "zone-euphotique",
+          "zone-aphotique",
+          "zone-pelagique",
+          "zone-abyssale",
+          "zone-benthique",
+          "benthos",
+          "detritus",
+          "thermocline"
+        ]
+      },
+      {
+        "id": "brassage-saisonnier-lacs",
+        "titre": "Brassage saisonnier des lacs",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "La température des lacs est particulièrement sujette à la stratification en été et en hiver. Les eaux de nombreux lacs tempérés se mélangent deux fois par an à cause des changements de température."
+          },
+          {
+            "type": "definition",
+            "notionId": "micticite"
+          },
+          {
+            "type": "important",
+            "text": "Le brassage saisonnier envoie l’eau enrichie en dioxygène de la surface vers le fond et amène l’eau riche en nutriments du fond vers la surface. Ces cycles sont essentiels à la survie et à la croissance des organismes de l’écosystème."
+          }
+        ],
+        "notions": [
+          "micticite",
+          "thermocline",
+          "facteur-abiotique"
+        ]
+      },
+      {
+        "id": "repartition-especes",
+        "titre": "Pourquoi une espèce se trouve-t-elle ici ?",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "La répartition des espèces s’explique par les interactions biologiques et évolutives qui ont cours dans le temps."
+          },
+          {
+            "type": "paragraph",
+            "text": "Le temps écologique correspond au cadre temporel, à la minute près, des interactions entre les organismes et leur milieu. Le temps de l’évolution s’étend sur plusieurs générations, au cours desquelles la sélection naturelle conduit à l’adaptation."
+          },
+          {
+            "type": "paragraph",
+            "text": "Le climat peut agir directement, mais aussi indirectement par les agents pathogènes, les parasites, les prédateurs, les compétiteurs ou la nourriture."
+          },
+          {
+            "type": "important",
+            "text": "Les écologues doivent tenir compte de nombreux facteurs et considérer plusieurs hypothèses pour expliquer la répartition d’une espèce."
+          }
+        ],
+        "notions": [
+          "facteur-abiotique",
+          "facteur-biotique",
+          "predateur"
+        ]
+      },
+      {
+        "id": "expansion-selection-habitat",
+        "titre": "Expansion et sélection d’habitat",
+        "contenu": [
+          {
+            "type": "definition",
+            "notionId": "expansion"
+          },
+          {
+            "type": "paragraph",
+            "text": "L’aire potentielle de répartition d’une espèce est souvent plus étendue que son aire réelle : l’espèce pourrait vivre dans certaines zones où elle n’habite pas actuellement."
+          },
+          {
+            "type": "definition",
+            "notionId": "selection-habitat"
+          },
+          {
+            "type": "paragraph",
+            "text": "Les décisions de sélection d’habitat peuvent être innées ou apprises. Le cours cite la pyrale du maïs : ses larves peuvent consommer plusieurs plantes, mais l’odeur du maïs attire les femelles au moment de la ponte, ce qui restreint l’insecte aux zones où pousse le maïs."
+          }
+        ],
+        "notions": [
+          "expansion",
+          "selection-habitat",
+          "habitat"
+        ]
+      },
+      {
+        "id": "facteurs-biotiques",
+        "titre": "Facteurs biotiques",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "Les facteurs biotiques incluent les autres espèces, les agents pathogènes, les parasites, les prédateurs, les compétiteurs, la nourriture et les herbivores."
+          },
+          {
+            "type": "definition",
+            "notionId": "predateur"
+          },
+          {
+            "type": "definition",
+            "notionId": "herbivore"
+          },
+          {
+            "type": "paragraph",
+            "text": "Dans l’exemple du varech, des oursins et des patelles, le retrait des oursins accroît beaucoup plus la croissance du varech que le retrait des patelles. Le cours en conclut que les oursins limitent davantage la répartition du varech."
+          }
+        ],
+        "notions": [
+          "facteur-biotique",
+          "predateur",
+          "herbivore"
+        ]
+      },
+      {
+        "id": "facteurs-abiotiques-limitants",
+        "titre": "Facteurs abiotiques limitants",
+        "contenu": [
+          {
+            "type": "paragraph",
+            "text": "La température, l’eau, le dioxygène, la salinité, la lumière et le sol peuvent limiter la répartition d’une espèce. Ces facteurs varient dans l’espace et le temps. La dormance et l’hibernation permettent de s’abriter temporairement de conditions difficiles."
+          },
+          {
+            "type": "bullet-list",
+            "items": [
+              "Température : elle agit sur la répartition et les processus biologiques. Le support mentionne les organismes eurythermes et sténothermes ;",
+              "Eau et dioxygène : la déshydratation, la dissolution du dioxygène et les échanges avec l’atmosphère sont présentés ;",
+              "Salinité : elle intervient dans l’équilibre hydrique et l’osmorégulation ;",
+              "Lumière solaire : elle fournit l’énergie de la photosynthèse ; le désert et les ultraviolets de haute altitude sont cités ;",
+              "Roches et sol : leur pH, leurs minéraux et leur structure peuvent limiter la répartition animale et végétale."
+            ]
+          },
+          {
+            "type": "definition",
+            "notionId": "stenotherme"
+          }
+        ],
+        "notions": [
+          "facteur-abiotique",
+          "stenotherme"
+        ]
+      }
+    ]
+  },
+  "definitionRefs": [
+    "habitat",
+    "facteur-abiotique",
+    "facteur-biotique",
+    "ecotone",
+    "stenotherme"
+  ],
+  "definitionsToCreate": [
+    {
+      "id": "climat",
+      "terme": "Climat",
+      "definitionCourte": "Ensemble des conditions météorologiques à long terme propres à une région donnée.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "climat"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "macroclimat",
+      "terme": "Macroclimat",
+      "definitionCourte": "Régimes climatiques à l’échelle planétaire, régionale et locale.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "macroclimat"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "microclimat",
+      "terme": "Microclimat",
+      "definitionCourte": "Régimes climatiques à petite échelle et localisés, comme ceux d’une communauté vivant dans un microhabitat.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "microclimat"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "microhabitat",
+      "terme": "Microhabitat",
+      "definitionCourte": "Habitat de très faible étendue et spécialisé.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "microhabitat"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "biome",
+      "terme": "Biome",
+      "definitionCourte": "Important écosystème caractérisé par un type de végétation pour les biomes terrestres ou par le milieu physique pour les biomes aquatiques.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "biome"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "climatogramme",
+      "terme": "Climatogramme",
+      "definitionCourte": "Représentation graphique des températures et des précipitations mesurées dans une région donnée et exprimées en moyennes annuelles.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "climatogramme"
+      ],
+      "difficulte": 2,
+      "distracteursProches": []
+    },
+    {
+      "id": "canopee",
+      "terme": "Canopée",
+      "definitionCourte": "Strate arborescente supérieure d’une forêt.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "canopée",
+        "canopee"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "perturbation",
+      "terme": "Perturbation",
+      "definitionCourte": "Événement comme une tempête, un incendie ou une activité humaine qui transforme une communauté, fait disparaître des organismes et modifie la disponibilité des ressources.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "perturbation"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "zone-euphotique",
+      "terme": "Zone euphotique",
+      "definitionCourte": "Zone supérieure où la lumière pénètre suffisamment pour permettre la photosynthèse.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "zone euphotique",
+        "euphotique"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "zone-aphotique",
+      "terme": "Zone aphotique",
+      "definitionCourte": "Zone inférieure privée de lumière.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "zone aphotique",
+        "aphotique"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "zone-pelagique",
+      "terme": "Zone pélagique",
+      "definitionCourte": "Zone d’eau libre composée des zones euphotique et aphotique.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "zone pélagique",
+        "zone pelagique",
+        "pélagique",
+        "pelagique"
+      ],
+      "difficulte": 2,
+      "distracteursProches": []
+    },
+    {
+      "id": "zone-abyssale",
+      "terme": "Zone abyssale",
+      "definitionCourte": "Partie profonde de l’océan située, selon le cours, entre environ 2 000 et 6 000 m.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "zone abyssale",
+        "abyssale"
+      ],
+      "difficulte": 2,
+      "distracteursProches": []
+    },
+    {
+      "id": "zone-benthique",
+      "terme": "Zone benthique",
+      "definitionCourte": "Substrat situé au fond des biomes aquatiques.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "zone benthique",
+        "benthique"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "benthos",
+      "terme": "Benthos",
+      "definitionCourte": "Ensemble des communautés d’organismes occupant la zone benthique.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "benthos"
+      ],
+      "difficulte": 2,
+      "distracteursProches": []
+    },
+    {
+      "id": "detritus",
+      "terme": "Détritus",
+      "definitionCourte": "Matière organique morte tombant notamment des eaux superficielles vers le fond.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "détritus",
+        "detritus"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "thermocline",
+      "terme": "Thermocline",
+      "definitionCourte": "Mince couche séparant les eaux superficielles chaudes des eaux profondes froides et dans laquelle le gradient thermique est abrupt.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "thermocline"
+      ],
+      "difficulte": 2,
+      "distracteursProches": []
+    },
+    {
+      "id": "micticite",
+      "terme": "Micticité",
+      "definitionCourte": "Brassage saisonnier des eaux de certains lacs tempérés, permettant notamment le transfert d’eau riche en O2 vers le fond et d’eau riche en nutriments vers la surface.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "micticité",
+        "micticite",
+        "brassage saisonnier"
+      ],
+      "difficulte": 2,
+      "distracteursProches": []
+    },
+    {
+      "id": "expansion",
+      "terme": "Expansion",
+      "definitionCourte": "Déplacement par lequel des individus s’éloignent des centres où leur population est dense ou de leur région d’origine.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "expansion"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "selection-habitat",
+      "terme": "Sélection d’habitat",
+      "definitionCourte": "Processus hiérarchique impliquant une série de décisions comportementales innées ou apprises concernant l’utilisation de l’habitat à différentes échelles spatiales.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "sélection d’habitat",
+        "selection d'habitat",
+        "sélection de l’habitat",
+        "selection de l'habitat"
+      ],
+      "difficulte": 2,
+      "distracteursProches": []
+    },
+    {
+      "id": "predateur",
+      "terme": "Prédateur",
+      "definitionCourte": "Organisme qui tue ses proies.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "prédateur",
+        "predateur"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    },
+    {
+      "id": "herbivore",
+      "terme": "Herbivore",
+      "definitionCourte": "Organisme qui mange des plantes ou des algues.",
+      "explication": "",
+      "theme": "Écologie et biosphère",
+      "variantesAcceptees": [
+        "herbivore"
+      ],
+      "difficulte": 1,
+      "distracteursProches": []
+    }
+  ],
+  "questions": [
+    {
+      "id": "ecologie-biosphere-q01",
+      "sectionId": "climat-macroclimat-microclimat",
+      "type": "short-answer",
+      "question": "Qu’est-ce que le climat ?",
+      "answer": "Ensemble des conditions météorologiques à long terme propres à une région donnée.",
+      "acceptedAnswers": [
+        "Ensemble des conditions météorologiques à long terme propres à une région donnée",
+        "Les conditions météorologiques à long terme d’une région"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q02",
+      "sectionId": "climat-macroclimat-microclimat",
+      "type": "qcm",
+      "question": "Quels sont les quatre facteurs abiotiques cités au début du cours ?",
+      "answer": "Température, précipitations, lumière et vent",
+      "choices": [
+        "Température, précipitations, lumière et vent",
+        "Température, salinité, sol et dioxygène",
+        "Humidité, pression, latitude et altitude",
+        "Lumière, nutriments, pH et substrat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q03",
+      "sectionId": "climat-macroclimat-microclimat",
+      "type": "qcm",
+      "question": "Quelle différence le cours fait-il entre macroclimat et microclimat ?",
+      "answer": "Le macroclimat concerne des régimes à grande échelle, tandis que le microclimat correspond à des conditions localisées à petite échelle.",
+      "choices": [
+        "Le macroclimat concerne des régimes à grande échelle, tandis que le microclimat correspond à des conditions localisées à petite échelle.",
+        "Le macroclimat concerne uniquement les océans, tandis que le microclimat concerne uniquement les continents.",
+        "Le macroclimat décrit le temps quotidien, tandis que le microclimat décrit les moyennes annuelles.",
+        "Le macroclimat dépend des êtres vivants, tandis que le microclimat dépend uniquement des roches."
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q04",
+      "sectionId": "regimes-climatiques-planetaires",
+      "type": "short-answer",
+      "question": "Pourquoi l’intensité de la lumière solaire varie-t-elle avec la latitude ?",
+      "answer": "Parce que la Terre est ronde et que les rayons frappent plus directement les tropiques et plus obliquement les latitudes élevées.",
+      "acceptedAnswers": [
+        "La Terre est ronde et les rayons frappent directement les tropiques et obliquement les hautes latitudes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q05",
+      "sectionId": "rayonnement-atmosphere-bilan",
+      "type": "qcm",
+      "question": "Quelle valeur approximative le cours donne-t-il pour la constante solaire ?",
+      "answer": "1 360 W/m²",
+      "choices": [
+        "1 360 W/m²",
+        "340 W/m²",
+        "63 500 W/m²",
+        "35 W/m²"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q06",
+      "sectionId": "rayonnement-atmosphere-bilan",
+      "type": "qcm",
+      "question": "Quel rayonnement solaire incident moyen le cours indique-t-il à la surface de la Terre après division par quatre ?",
+      "answer": "Environ 340 W/m²",
+      "choices": [
+        "Environ 340 W/m²",
+        "Environ 1 360 W/m²",
+        "Environ 35 W/m²",
+        "Environ 63 500 W/m²"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q07",
+      "sectionId": "rayonnement-atmosphere-bilan",
+      "type": "qcm",
+      "question": "Dans quelle couche de l’atmosphère ont lieu les principaux phénomènes météorologiques ?",
+      "answer": "La troposphère",
+      "choices": [
+        "La troposphère",
+        "La stratosphère",
+        "La mésosphère",
+        "La thermosphère"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q08",
+      "sectionId": "effet-serre",
+      "type": "short-answer",
+      "question": "Quel mécanisme est à l’origine de l’effet de serre naturel ?",
+      "answer": "L’absorption des infrarouges rayonnés par la surface terrestre par certains gaz atmosphériques, suivie d’une réémission d’infrarouges.",
+      "acceptedAnswers": [
+        "Absorption puis réémission des infrarouges par des gaz atmosphériques"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q09",
+      "sectionId": "effet-serre",
+      "type": "short-answer",
+      "question": "Quel phénomène humain intensifie actuellement l’effet de serre selon le cours ?",
+      "answer": "L’émission massive de gaz à effet de serre liée aux activités humaines.",
+      "acceptedAnswers": [
+        "Les émissions massives de gaz à effet de serre liées aux activités humaines"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q10",
+      "sectionId": "circulation-facteurs-regionaux",
+      "type": "short-answer",
+      "question": "Quels trois grands facteurs régionaux et locaux du climat sont cités ?",
+      "answer": "Les variations saisonnières, les grandes étendues d’eau et les chaînes de montagnes.",
+      "acceptedAnswers": [
+        "Variations saisonnières, grandes étendues d’eau et chaînes de montagnes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q11",
+      "sectionId": "saisons-oceans-montagnes",
+      "type": "short-answer",
+      "question": "Quelle est l’origine principale des variations saisonnières décrites dans le cours ?",
+      "answer": "L’inclinaison de l’axe de la Terre et sa course annuelle autour du Soleil.",
+      "acceptedAnswers": [
+        "L’inclinaison de l’axe terrestre et la révolution de la Terre autour du Soleil"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q12",
+      "sectionId": "saisons-oceans-montagnes",
+      "type": "short-answer",
+      "question": "Comment les courants marins peuvent-ils influencer le climat des côtes ?",
+      "answer": "Ils réchauffent ou refroidissent les masses d’air marin passant au-dessus des continents.",
+      "acceptedAnswers": [
+        "En réchauffant ou refroidissant les masses d’air marin passant au-dessus des continents"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q13",
+      "sectionId": "saisons-oceans-montagnes",
+      "type": "qcm",
+      "question": "Quel courant contribue à tempérer le climat de l’Europe occidentale et septentrionale ?",
+      "answer": "Le Gulf Stream",
+      "choices": [
+        "Le Gulf Stream",
+        "Le courant de Californie",
+        "Le courant du Labrador",
+        "La thermocline"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q14",
+      "sectionId": "saisons-oceans-montagnes",
+      "type": "short-answer",
+      "question": "Que se passe-t-il lorsque de l’air chaud et humide rencontre une montagne ?",
+      "answer": "Il s’élève, refroidit et libère son humidité sur le versant exposé au vent.",
+      "acceptedAnswers": [
+        "L’air s’élève, refroidit et libère son humidité sur le versant exposé"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q15",
+      "sectionId": "saisons-oceans-montagnes",
+      "type": "qcm",
+      "question": "Dans l’hémisphère Nord, quel versant reçoit généralement le plus de lumière solaire selon le cours ?",
+      "answer": "Le versant sud",
+      "choices": [
+        "Le versant sud",
+        "Le versant nord",
+        "Le versant exposé au courant du Labrador",
+        "Le versant situé au niveau de la thermocline"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q16",
+      "sectionId": "microclimats-facteurs-locaux",
+      "type": "short-answer",
+      "question": "Donne un exemple de microhabitat cité dans le cours.",
+      "answer": "Sous une bûche.",
+      "acceptedAnswers": [
+        "Sous une bûche",
+        "Sous une grosse pierre",
+        "Entre l’écorce d’un arbre et son tronc"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q17",
+      "sectionId": "biomes-climatogrammes",
+      "type": "short-answer",
+      "question": "Qu’est-ce qu’un biome ?",
+      "answer": "Un important écosystème caractérisé par un type de végétation pour les biomes terrestres ou par le milieu physique pour les biomes aquatiques.",
+      "acceptedAnswers": [
+        "Important écosystème caractérisé par la végétation sur terre ou par le milieu physique dans l’eau"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q18",
+      "sectionId": "biomes-climatogrammes",
+      "type": "short-answer",
+      "question": "Qu’est-ce qu’un climatogramme ?",
+      "answer": "Une représentation graphique des températures et des précipitations d’une région exprimées en moyennes annuelles.",
+      "acceptedAnswers": [
+        "Représentation graphique des températures et précipitations moyennes annuelles d’une région"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q19",
+      "sectionId": "biomes-climatogrammes",
+      "type": "short-answer",
+      "question": "Pourquoi deux végétations différentes peuvent-elles exister pour des conditions climatiques moyennes proches ?",
+      "answer": "Parce que les variations saisonnières et d’autres facteurs abiotiques, notamment le substrat, les minéraux et la structure du sol, interviennent aussi.",
+      "acceptedAnswers": [
+        "Les variations saisonnières, le substrat, les minéraux et la structure du sol interviennent aussi"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "ecologie-biosphere-q20",
+      "sectionId": "ecotones-stratification",
+      "type": "short-answer",
+      "question": "Qu’est-ce qu’un écotone ?",
+      "answer": "Une zone de transition ou de chevauchement entre deux ensembles écologiques.",
+      "acceptedAnswers": [
+        "Zone de transition entre deux ensembles écologiques",
+        "Zone de chevauchement entre deux ensembles écologiques"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q21",
+      "sectionId": "ecotones-stratification",
+      "type": "short-answer",
+      "question": "Cite un exemple d’écotone donné dans le cours.",
+      "answer": "Ripisylve.",
+      "acceptedAnswers": [
+        "Ripisylve",
+        "Zone intertidale",
+        "Lisière de forêt",
+        "Lisière forestière"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q22",
+      "sectionId": "ecotones-stratification",
+      "type": "qcm",
+      "question": "Comment appelle-t-on la strate arborescente supérieure d’une forêt ?",
+      "answer": "La canopée",
+      "choices": [
+        "La canopée",
+        "La litière",
+        "La strate racinaire",
+        "La zone benthique"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q23",
+      "sectionId": "evolution-convergente-perturbations",
+      "type": "qcm",
+      "question": "Quel phénomène est illustré par Euphorbia canariensis et Cereus peruvianus ?",
+      "answer": "L’évolution convergente",
+      "choices": [
+        "L’évolution convergente",
+        "La stratification verticale",
+        "La sélection d’habitat",
+        "La micticité"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q24",
+      "sectionId": "evolution-convergente-perturbations",
+      "type": "short-answer",
+      "question": "Qu’est-ce qu’une perturbation en écologie selon le cours ?",
+      "answer": "Un événement qui transforme une communauté, fait disparaître certains organismes et modifie la disponibilité des ressources.",
+      "acceptedAnswers": [
+        "Événement transformant une communauté, faisant disparaître des organismes et modifiant les ressources"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q25",
+      "sectionId": "biomes-aquatiques",
+      "type": "short-answer",
+      "question": "Sur quoi repose principalement la caractérisation des biomes aquatiques ?",
+      "answer": "Sur leurs caractéristiques physiques et chimiques.",
+      "acceptedAnswers": [
+        "Leurs caractéristiques physiques et chimiques"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q26",
+      "sectionId": "biomes-aquatiques",
+      "type": "qcm",
+      "question": "Quelle concentration saline maximale le cours associe-t-il à l’eau douce ?",
+      "answer": "Moins de 0,1 %",
+      "choices": [
+        "Moins de 0,1 %",
+        "Environ 3 %",
+        "Environ 10 %",
+        "Plus de 35 %"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q27",
+      "sectionId": "biomes-aquatiques",
+      "type": "qcm",
+      "question": "Quelle concentration saline moyenne le cours donne-t-il pour les biomes marins ?",
+      "answer": "Environ 3 %",
+      "choices": [
+        "Environ 3 %",
+        "Moins de 0,1 %",
+        "Environ 35 %",
+        "Environ 75 %"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q28",
+      "sectionId": "zonation-milieux-aquatiques",
+      "type": "short-answer",
+      "question": "Quels facteurs déterminent notamment la répartition des communautés lacustres et marines ?",
+      "answer": "La profondeur, la pénétration de la lumière, la distance par rapport à la rive ou au rivage et la distinction entre eau libre et fond.",
+      "acceptedAnswers": [
+        "Profondeur, pénétration de la lumière, distance à la rive et distinction entre eau libre et fond"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "ecologie-biosphere-q29",
+      "sectionId": "stratification-verticale-thermique",
+      "type": "qcm",
+      "question": "Qu’est-ce que la zone euphotique ?",
+      "answer": "La zone où la lumière pénètre suffisamment pour permettre la photosynthèse.",
+      "choices": [
+        "La zone où la lumière pénètre suffisamment pour permettre la photosynthèse.",
+        "La zone inférieure privée de lumière.",
+        "Le substrat situé au fond des biomes aquatiques.",
+        "La partie de l’océan située entre 2 000 et 6 000 m."
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q30",
+      "sectionId": "stratification-verticale-thermique",
+      "type": "qcm",
+      "question": "Qu’est-ce que la zone benthique ?",
+      "answer": "Le substrat situé au fond des biomes aquatiques.",
+      "choices": [
+        "Le substrat situé au fond des biomes aquatiques.",
+        "La zone où la lumière permet la photosynthèse.",
+        "La zone d’eau libre composée des zones euphotique et aphotique.",
+        "La couche séparant les eaux chaudes et froides."
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q31",
+      "sectionId": "stratification-verticale-thermique",
+      "type": "qcm",
+      "question": "À quelle profondeur le cours situe-t-il approximativement la zone abyssale ?",
+      "answer": "Entre 2 000 et 6 000 m",
+      "choices": [
+        "Entre 2 000 et 6 000 m",
+        "Entre 20 et 60 m",
+        "Entre 200 et 600 m",
+        "Au-dessus de 2 m"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "ecologie-biosphere-q32",
+      "sectionId": "stratification-verticale-thermique",
+      "type": "qcm",
+      "question": "Qu’est-ce qu’une thermocline ?",
+      "answer": "Une couche où le gradient thermique est abrupt entre les eaux superficielles chaudes et les eaux profondes froides.",
+      "choices": [
+        "Une couche où le gradient thermique est abrupt entre les eaux superficielles chaudes et les eaux profondes froides.",
+        "Une zone de transition entre deux biomes terrestres.",
+        "Une zone privée de lumière au fond de l’océan.",
+        "Un brassage saisonnier des eaux de surface."
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q33",
+      "sectionId": "brassage-saisonnier-lacs",
+      "type": "short-answer",
+      "question": "À quoi sert écologiquement le brassage saisonnier ou micticité ?",
+      "answer": "Il apporte de l’eau enrichie en O2 vers le fond et fait remonter vers la surface de l’eau riche en nutriments.",
+      "acceptedAnswers": [
+        "Il apporte du dioxygène vers le fond et fait remonter les nutriments vers la surface",
+        "Transfert d’O2 vers le fond et de nutriments vers la surface"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q34",
+      "sectionId": "expansion-selection-habitat",
+      "type": "short-answer",
+      "question": "Qu’est-ce que l’expansion d’une espèce ?",
+      "answer": "Le déplacement par lequel les individus s’éloignent des zones où leur population est dense ou de leur région d’origine.",
+      "acceptedAnswers": [
+        "Déplacement d’individus loin des zones de forte densité ou de leur région d’origine"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q35",
+      "sectionId": "repartition-especes",
+      "type": "short-answer",
+      "question": "Quels grands types de facteurs peuvent limiter la répartition d’une espèce selon la fin du cours ?",
+      "answer": "Le comportement, les facteurs biotiques et les facteurs abiotiques, en plus des possibilités d’expansion.",
+      "acceptedAnswers": [
+        "Comportement, facteurs biotiques, facteurs abiotiques et expansion"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "ecologie-biosphere-q36",
+      "sectionId": "facteurs-abiotiques-limitants",
+      "type": "short-answer",
+      "question": "Quels facteurs abiotiques sont explicitement cités comme pouvant limiter la répartition ?",
+      "answer": "Température, eau, dioxygène, salinité, lumière et sol.",
+      "acceptedAnswers": [
+        "Température, eau, oxygène, salinité, lumière et sol",
+        "Température, eau, O2, salinité, lumière et sol"
+      ],
+      "difficulty": 2
+    }
+  ],
+  "confusionGroups": [
+    [
+      "macroclimat",
+      "microclimat"
+    ],
+    [
+      "facteur-biotique",
+      "facteur-abiotique"
+    ],
+    [
+      "zone-euphotique",
+      "zone-aphotique"
+    ],
+    [
+      "zone-pelagique",
+      "zone-benthique"
+    ]
+  ]
+}
