@@ -20,6 +20,7 @@ export function home(root,ctx) {
     <section class="welcome"><p class="eyebrow">TON TERRAIN D’APPRENTISSAGE</p><h1>Un peu de révision.<br>Beaucoup de nature.</h1><p class="muted">Cours. Définitions. Quiz.</p></section>
     <section class="home-priority" aria-label="À faire maintenant">${daily}</section>
     ${eventCards}
+    <section class="event-card event-card-ligneux" aria-labelledby="event-title-ligneux"><div class="event-card-top"><span class="event-badge"><i class="ph ph-tree" aria-hidden="true"></i> EVENT</span><span class="event-subject">ÉVALUATION DU 5 NOVEMBRE</span></div><div><h2 id="event-title-ligneux">Reconnaissance des ligneux</h2><p>30 arbres et arbustes à identifier sur de vraies photographies botaniques.</p></div><a class="button event-button wide" href="#/ligneux">S’entraîner <i class="ph ph-arrow-right" aria-hidden="true"></i></a></section>
     <nav class="learning-links" aria-label="Apprendre et consulter">
       <a class="learning-link" href="#/courses"><span class="learning-link-icon" aria-hidden="true"><i class="ph ph-book-open-text"></i></span><span><strong>Cours</strong><small>Lire et comprendre</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></a>
       <a class="learning-link" href="#/notions"><span class="learning-link-icon" aria-hidden="true"><i class="ph ph-notebook"></i></span><span><strong>Notions</strong><small>Consulter les définitions</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></a>

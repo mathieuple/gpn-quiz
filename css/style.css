@@ -43,6 +43,8 @@ body[data-route="/play"] .shell { padding-bottom: calc(var(--space-6) + env(safe
 .storage-status { margin-top: var(--space-4); color: var(--danger); }
 .hidden { display: none !important; }
 body[data-route="/play"] .topbar, body[data-route="/play"] .bottom-nav, body[data-route="/play"] .page-footer { display: none; }
+body[data-route="/ligneux/play"] .topbar, body[data-route="/ligneux/play"] .bottom-nav, body[data-route="/ligneux/play"] .page-footer { display: none; }
+body[data-route="/ligneux/play"] .shell { padding-top: var(--space-4); padding-bottom: calc(var(--space-5) + env(safe-area-inset-bottom)); }
 body[data-route="/play"] .shell { padding-top: calc(var(--space-4) + env(safe-area-inset-top)); padding-bottom: calc(var(--space-6) + env(safe-area-inset-bottom)); }
 @media (hover: hover) { .bottom-nav a:hover { color: var(--text); background: var(--soft); } }
 @media (max-width: 480px) {

@@ -30,4 +30,8 @@ test('PWA : cache complet, sous-chemin, activation et navigation hors ligne',asy
   events.fetch({request:{url:scope+'content/courses/nouveau.json',method:'GET',mode:'cors'},respondWith:p=>response=p,waitUntil:p=>pending=p});assert.match(await (await response).text(),/schemaVersion/);await pending;
   networkFetch=async()=>{throw Error('Offline');};
   events.fetch({request:{url:scope+'content/courses/nouveau.json',method:'GET',mode:'cors'},respondWith:p=>response=p,waitUntil:p=>pending=p});assert.match(await (await response).text(),/schemaVersion/);await pending;
+  const messages=[];networkFetch=async request=>new Response('photo '+request,{status:200});
+  events.message({data:{type:'CACHE_LIGNEUX_PACK',files:['assets/ligneux/lnx-01-01.webp','assets/ligneux/lnx-02-01.webp']},ports:[{postMessage:message=>messages.push(message)}],waitUntil:p=>pending=p});await pending;
+  assert.equal(messages.filter(message=>message.type==='LINEUX_CACHE_PROGRESS').length,2);assert.equal(messages.at(-1).type,'LINEUX_CACHE_DONE');
+  assert.ok(entries.has(scope+'assets/ligneux/lnx-01-01.webp'));assert.ok(entries.has(scope+'assets/ligneux/lnx-02-01.webp'));
 });

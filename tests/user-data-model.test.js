@@ -43,3 +43,9 @@ test('la progression reste rattachée au même ID après rechargement',()=>{
   const storage=memory(),user=defaults();user.notions['course-question:stable-q01']=recordNotion({},'exact','qcm',NOW);save(user,storage);
   const reloaded=load(storage);assert.equal(reloaded.notions['course-question:stable-q01'].timesSeen,1);assert.equal(Object.keys(reloaded.notions).length,1);assert.equal(reloaded.notions['stable-q01'],undefined);
 });
+
+test('la progression photographique ligneux survit au rechargement sans toucher aux notions',()=>{
+  const storage=memory(),user=defaults();user.ligneux.totalAnswered=1;user.ligneux.wrong=1;user.ligneux.species['betula-pendula']={seen:1,correct:0,wrong:1,streak:0,lastSeen:NOW};user.ligneux.photos['lnx-03-01']={shown:1,correct:0,wrong:1,lastSeen:NOW};user.ligneux.updatedAt=NOW;
+  save(user,storage);const reloaded=load(storage);
+  assert.equal(reloaded.ligneux.totalAnswered,1);assert.equal(reloaded.ligneux.species['betula-pendula'].wrong,1);assert.equal(reloaded.ligneux.photos['lnx-03-01'].shown,1);assert.deepEqual(reloaded.notions,{});
+});
